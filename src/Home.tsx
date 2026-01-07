@@ -1,12 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Building2, Users, Globe, TrendingUp, Brain, Briefcase, Wallet, Coins, Star, Tv, ArrowRight, Monitor, Newspaper } from 'lucide-react';
+import { Users, TrendingUp, Brain, Briefcase, Wallet, Coins, Star, Tv, ArrowRight, Monitor, Newspaper } from 'lucide-react';
 
 interface IoMarketsOrgProps {
   onDomainChange?: (domain: string) => void;
 }
 
-const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange }) => {
+const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainChange }) => {
   const handleServiceClick = (domain: string, isExternal: boolean = false) => {
     if (isExternal) {
       // Open external link in a new tab
