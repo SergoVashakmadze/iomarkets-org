@@ -7,14 +7,14 @@
    Elegant Gold Accents with Modern Effects
    ======================================== */
 
-/* CSS Variables - BOLD VIBRANT GOLD */
+/* CSS Variables - INSTITUTIONAL BRONZE/GOLD */
 :root {
-  /* Brand Colors - VIBRANT Gold Theme */
-  --gold: #FFD700;
-  --gold-light: #FFF8DC;
-  --gold-dark: #FFA500;
-  --amber: #F0B90B;
-  --amber-light: #FFDF00;
+  /* Brand Colors - Institutional Bronze/Gold Theme */
+  --gold: #DAA520;
+  --gold-light: #CFB53B;
+  --gold-dark: #B8860B;
+  --amber: #C5A028;
+  --amber-light: #D4AF37;
 
   /* Navy/Dark Theme */
   --navy-950: #0a0e1a;
@@ -37,20 +37,20 @@
 }
 
 @layer utilities {
-  /* Glass effect for .org - BOLD gold tint */
+  /* Glass effect for .org - INSTITUTIONAL gold tint */
   .glass {
     background: rgba(19, 23, 34, 0.9);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    border: 1px solid rgba(184, 134, 11, 0.3);
   }
 
   .glass-gold {
-    background: rgba(255, 215, 0, 0.12);
+    background: rgba(184, 134, 11, 0.12);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 215, 0, 0.4);
-    box-shadow: 0 4px 30px rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(184, 134, 11, 0.4);
+    box-shadow: 0 4px 30px rgba(184, 134, 11, 0.1);
   }
 }
 
@@ -63,21 +63,21 @@
   background: linear-gradient(135deg, #0a0e1a 0%, #0d1526 25%, #151D33 50%, #0d1526 75%, #0a0e1a 100%);
 }
 
-/* Elegant grid pattern - BOLD gold crosshatch */
+/* Elegant grid pattern - INSTITUTIONAL gold crosshatch */
 .elegant-grid {
   background-image:
-    linear-gradient(rgba(255, 215, 0, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 215, 0, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(184, 134, 11, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184, 134, 11, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
-/* Diamond pattern overlay - BOLD gold */
+/* Diamond pattern overlay - INSTITUTIONAL gold */
 .diamond-pattern {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L55 30 L30 55 L5 30 Z' fill='none' stroke='rgba(255,215,0,0.08)' stroke-width='1'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L55 30 L30 55 L5 30 Z' fill='none' stroke='rgba(184,134,11,0.08)' stroke-width='1'/%3E%3C/svg%3E");
   background-size: 60px 60px;
 }
 
-/* Gold orb effect - BOLD */
+/* Gold orb effect - INSTITUTIONAL */
 .orb-gold {
   opacity: 0.2;
   filter: blur(100px);
@@ -158,17 +158,17 @@
   to { transform: rotate(360deg); }
 }
 
-/* Pulse glow for gold elements - BOLD */
+/* Pulse glow for gold elements - INSTITUTIONAL */
 .pulse-gold {
   animation: pulse-gold 3s ease-in-out infinite;
 }
 
 @keyframes pulse-gold {
   0%, 100% {
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 0 30px rgba(184, 134, 11, 0.4);
   }
   50% {
-    box-shadow: 0 0 60px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 0 60px rgba(218, 165, 32, 0.6);
   }
 }
 
@@ -186,15 +186,15 @@
   animation: shimmer 3s linear infinite;
 }
 
-/* Gradient text for gold - BOLD VIBRANT */
+/* Gradient text for gold - INSTITUTIONAL */
 .gradient-text-gold {
-  background: linear-gradient(135deg, #FFD700, #FFF8DC, #FFA500, #FFD700);
+  background: linear-gradient(135deg, #DAA520, #CFB53B, #B8860B, #DAA520);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   animation: gradient-shift 4s ease infinite;
-  text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  text-shadow: 0 0 30px rgba(184, 134, 11, 0.3);
 }
 
 @keyframes gradient-shift {
@@ -251,7 +251,7 @@
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  background: linear-gradient(90deg, transparent, #B8860B, transparent);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
