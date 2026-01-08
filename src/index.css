@@ -63,17 +63,30 @@
   background: linear-gradient(135deg, #0a0e1a 0%, #0d1526 25%, #151D33 50%, #0d1526 75%, #0a0e1a 100%);
 }
 
-/* Elegant grid pattern - INSTITUTIONAL gold crosshatch */
+/* Hero gradient - deep navy with subtle violet undertones */
+.hero-gradient-bg {
+  background: linear-gradient(
+    135deg,
+    #070b14 0%,
+    #0c1220 20%,
+    #0f172a 40%,
+    #131b2e 60%,
+    #0f1629 80%,
+    #0a0f1a 100%
+  );
+}
+
+/* Elegant grid pattern - subtle white/blue tint */
 .elegant-grid {
   background-image:
-    linear-gradient(rgba(184, 134, 11, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(184, 134, 11, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(148, 163, 184, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
-/* Diamond pattern overlay - INSTITUTIONAL gold */
+/* Diamond pattern overlay - subtle slate */
 .diamond-pattern {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L55 30 L30 55 L5 30 Z' fill='none' stroke='rgba(184,134,11,0.08)' stroke-width='1'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L55 30 L30 55 L5 30 Z' fill='none' stroke='rgba(148,163,184,0.06)' stroke-width='1'/%3E%3C/svg%3E");
   background-size: 60px 60px;
 }
 
@@ -93,6 +106,25 @@
   50% {
     transform: scale(1.15);
     opacity: 0.25;
+  }
+}
+
+/* Hero orb effect - multi-color dynamic */
+.orb-hero {
+  opacity: 0.12;
+  filter: blur(120px);
+  border-radius: 50%;
+  animation: orb-hero-pulse 10s ease-in-out infinite;
+}
+
+@keyframes orb-hero-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.18;
   }
 }
 

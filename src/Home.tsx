@@ -7,79 +7,88 @@ interface IoMarketsOrgProps {
   onDomainChange?: (domain: string) => void;
 }
 
-// Floating diamonds and rings - INSTITUTIONAL gold/bronze theme
+// Floating diamonds and rings - multi-color theme matching tagline
 function FloatingElements() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Large floating diamond - institutional bronze */}
+      {/* Large floating diamond - teal (Ambition) */}
       <div className="absolute top-20 left-[10%] w-20 h-20 float-elegant">
-        <div className="w-full h-full border-2 border-[#B8860B]/50 bg-gradient-to-br from-[#B8860B]/12 to-[#8B6914]/6 transform rotate-45 backdrop-blur-sm shadow-lg shadow-[#B8860B]/15" />
+        <div className="w-full h-full border-2 border-[#2DD4BF]/40 bg-gradient-to-br from-[#2DD4BF]/10 to-[#14B8A6]/5 transform rotate-45 backdrop-blur-sm shadow-lg shadow-[#2DD4BF]/10" />
       </div>
 
-      {/* Medium diamond */}
+      {/* Medium diamond - violet (Innovation) */}
       <div className="absolute top-40 right-[15%] w-16 h-16 float-medium" style={{ animationDelay: '1s' }}>
-        <div className="w-full h-full border-2 border-[#DAA520]/40 bg-gradient-to-br from-[#DAA520]/10 to-[#B8860B]/5 transform rotate-45 backdrop-blur-sm" />
+        <div className="w-full h-full border-2 border-[#8B5CF6]/35 bg-gradient-to-br from-[#8B5CF6]/10 to-[#7C3AED]/5 transform rotate-45 backdrop-blur-sm" />
       </div>
 
-      {/* Small diamonds */}
+      {/* Small diamonds - emerald (Strategy) */}
       <div className="absolute bottom-32 left-[20%] w-12 h-12 float-fast" style={{ animationDelay: '0.5s' }}>
-        <div className="w-full h-full border-2 border-[#B8860B]/35 bg-[#B8860B]/8 transform rotate-45 backdrop-blur-sm" />
+        <div className="w-full h-full border-2 border-[#10B981]/30 bg-[#10B981]/8 transform rotate-45 backdrop-blur-sm" />
       </div>
 
+      {/* Small diamond - blue (Execution) */}
       <div className="absolute top-60 left-[5%] w-8 h-8 float-medium" style={{ animationDelay: '2s' }}>
-        <div className="w-full h-full border border-[#CFB53B]/45 bg-[#CFB53B]/10 transform rotate-45 backdrop-blur-sm" />
+        <div className="w-full h-full border border-[#3B82F6]/40 bg-[#3B82F6]/10 transform rotate-45 backdrop-blur-sm" />
       </div>
 
       <div className="absolute bottom-40 right-[10%] w-18 h-18 float-elegant" style={{ animationDelay: '1.5s' }}>
-        <div className="w-full h-full border-2 border-[#B8860B]/30 bg-gradient-to-br from-[#B8860B]/8 to-transparent transform rotate-45 backdrop-blur-sm" />
+        <div className="w-full h-full border-2 border-[#8B5CF6]/25 bg-gradient-to-br from-[#8B5CF6]/8 to-transparent transform rotate-45 backdrop-blur-sm" />
       </div>
 
-      {/* Floating rings - institutional */}
-      <div className="absolute top-32 right-[25%] w-28 h-28 float-medium opacity-60" style={{ animationDelay: '0.7s' }}>
-        <div className="w-full h-full border-2 border-[#B8860B]/35 rounded-full shadow-lg shadow-[#B8860B]/10" />
+      {/* Floating rings - multi-color */}
+      <div className="absolute top-32 right-[25%] w-28 h-28 float-medium opacity-50" style={{ animationDelay: '0.7s' }}>
+        <div className="w-full h-full border-2 border-[#2DD4BF]/30 rounded-full shadow-lg shadow-[#2DD4BF]/10" />
       </div>
 
-      <div className="absolute bottom-48 left-[30%] w-20 h-20 float-elegant opacity-50" style={{ animationDelay: '2.5s' }}>
-        <div className="w-full h-full border-2 border-[#DAA520]/30 rounded-full" />
+      <div className="absolute bottom-48 left-[30%] w-20 h-20 float-elegant opacity-40" style={{ animationDelay: '2.5s' }}>
+        <div className="w-full h-full border-2 border-[#3B82F6]/25 rounded-full" />
       </div>
 
       {/* Rotating ring - unique to .org */}
-      <div className="absolute top-1/2 right-[8%] w-32 h-32 rotate-slow opacity-45">
-        <div className="w-full h-full border-2 border-[#B8860B]/35 rounded-full" />
-        <div className="absolute inset-3 border border-dashed border-[#B8860B]/20 rounded-full" />
+      <div className="absolute top-1/2 right-[8%] w-32 h-32 rotate-slow opacity-35">
+        <div className="w-full h-full border-2 border-[#10B981]/30 rounded-full" />
+        <div className="absolute inset-3 border border-dashed border-[#10B981]/15 rounded-full" />
       </div>
     </div>
   );
 }
 
-// Animated wave lines - INSTITUTIONAL bronze/gold
+// Animated wave lines - multi-color theme
 function AnimatedGoldLines() {
   return (
-    <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-35" xmlns="http://www.w3.org/2000/svg">
+    <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-30" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <linearGradient id="gold-line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#B8860B" stopOpacity="0" />
-          <stop offset="50%" stopColor="#B8860B" stopOpacity="0.7" />
-          <stop offset="100%" stopColor="#DAA520" stopOpacity="0" />
+        {/* Teal to Violet gradient */}
+        <linearGradient id="line-gradient-1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#2DD4BF" stopOpacity="0" />
+          <stop offset="50%" stopColor="#2DD4BF" stopOpacity="0.6" />
+          <stop offset="100%" stopColor="#8B5CF6" stopOpacity="0" />
         </linearGradient>
-        <linearGradient id="gold-line-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#DAA520" stopOpacity="0" />
-          <stop offset="50%" stopColor="#DAA520" stopOpacity="0.5" />
-          <stop offset="100%" stopColor="#B8860B" stopOpacity="0" />
+        {/* Violet to Blue gradient */}
+        <linearGradient id="line-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#8B5CF6" stopOpacity="0" />
+          <stop offset="50%" stopColor="#8B5CF6" stopOpacity="0.5" />
+          <stop offset="100%" stopColor="#3B82F6" stopOpacity="0" />
+        </linearGradient>
+        {/* Emerald to Teal gradient */}
+        <linearGradient id="line-gradient-3" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#10B981" stopOpacity="0" />
+          <stop offset="50%" stopColor="#10B981" stopOpacity="0.4" />
+          <stop offset="100%" stopColor="#2DD4BF" stopOpacity="0" />
         </linearGradient>
       </defs>
-      {/* Curved wave lines - institutional */}
-      <path d="M0,150 Q300,100 600,150 T1200,150 T1800,150" stroke="url(#gold-line-gradient)" strokeWidth="1.5" fill="none">
+      {/* Curved wave lines - multi-color */}
+      <path d="M0,150 Q300,100 600,150 T1200,150 T1800,150" stroke="url(#line-gradient-1)" strokeWidth="1.5" fill="none">
         <animate attributeName="d"
           values="M0,150 Q300,100 600,150 T1200,150 T1800,150;M0,150 Q300,200 600,150 T1200,150 T1800,150;M0,150 Q300,100 600,150 T1200,150 T1800,150"
           dur="8s" repeatCount="indefinite" />
       </path>
-      <path d="M0,300 Q400,250 800,300 T1600,300" stroke="url(#gold-line-gradient-2)" strokeWidth="1" fill="none" opacity="0.5">
+      <path d="M0,300 Q400,250 800,300 T1600,300" stroke="url(#line-gradient-2)" strokeWidth="1" fill="none" opacity="0.6">
         <animate attributeName="d"
           values="M0,300 Q400,250 800,300 T1600,300;M0,300 Q400,350 800,300 T1600,300;M0,300 Q400,250 800,300 T1600,300"
           dur="10s" repeatCount="indefinite" />
       </path>
-      <path d="M0,450 Q250,400 500,450 T1000,450 T1500,450" stroke="url(#gold-line-gradient)" strokeWidth="0.75" fill="none" opacity="0.35">
+      <path d="M0,450 Q250,400 500,450 T1000,450 T1500,450" stroke="url(#line-gradient-3)" strokeWidth="0.75" fill="none" opacity="0.45">
         <animate attributeName="d"
           values="M0,450 Q250,400 500,450 T1000,450 T1500,450;M0,450 Q250,500 500,450 T1000,450 T1500,450;M0,450 Q250,400 500,450 T1000,450 T1500,450"
           dur="7s" repeatCount="indefinite" />
@@ -223,19 +232,22 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
       <section ref={heroRef} className="relative min-h-screen overflow-hidden flex items-center">
         {/* Animated background layers */}
         <div className="absolute inset-0">
-          {/* Base gradient - gold tinted navy */}
-          <div className="absolute inset-0 corporate-gradient-bg" />
+          {/* Base gradient - deep navy with violet undertones */}
+          <div className="absolute inset-0 hero-gradient-bg" />
 
-          {/* Elegant grid pattern - distinct from .xyz cyber-grid */}
+          {/* Elegant grid pattern */}
           <div className="absolute inset-0 elegant-grid" />
 
-          {/* Diamond pattern overlay - distinct from .xyz hex pattern */}
-          <div className="absolute inset-0 diamond-pattern opacity-50" />
+          {/* Diamond pattern overlay */}
+          <div className="absolute inset-0 diamond-pattern opacity-40" />
 
-          {/* Institutional bronze/gold orbs */}
-          <div className="absolute top-0 left-1/4 w-[700px] h-[700px] bg-[#B8860B] orb-gold" />
-          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#DAA520] orb-gold" style={{ animationDelay: '2s' }} />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-gradient-to-r from-[#B8860B]/15 to-[#DAA520]/10 rounded-full blur-[120px]" />
+          {/* Dynamic multi-color orbs matching tagline colors */}
+          <div className="absolute top-0 left-[15%] w-[600px] h-[600px] bg-[#2DD4BF] orb-hero" />
+          <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] bg-[#8B5CF6] orb-hero" style={{ animationDelay: '1s' }} />
+          <div className="absolute bottom-[10%] left-[30%] w-[550px] h-[550px] bg-[#10B981] orb-hero" style={{ animationDelay: '2s' }} />
+          <div className="absolute bottom-0 right-[25%] w-[450px] h-[450px] bg-[#3B82F6] orb-hero" style={{ animationDelay: '3s' }} />
+          {/* Central glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-gradient-to-r from-[#8B5CF6]/10 via-[#2DD4BF]/8 to-[#3B82F6]/10 rounded-full blur-[150px]" />
         </div>
 
         {/* Floating elements */}
