@@ -346,7 +346,34 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Article 1 */}
+            {/* Article 1 - The Atlantic */}
+            <a
+              href="https://www.theatlantic.com/technology/archive/2022/02/future-internet-blockchain-investment-banking/621480/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="h-48 bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-500 flex items-center justify-center">
+                <Coins className="w-20 h-20 text-white/80 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Technology</span>
+                  <span className="text-gray-400 text-xs">The Atlantic</span>
+                </div>
+                <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  The Internet Is Just Investment Banking Now
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  A thought-provoking analysis on how blockchain is reshaping the future of internet and finance.
+                </p>
+                <span className="text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read Article <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </a>
+
+            {/* Article 2 - Medium */}
             <a
               href="https://medium.datadriveninvestor.com/ai-blockchain-and-data-analytics-in-private-markets-a91be174dc2f"
               target="_blank"
@@ -358,7 +385,7 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">AI & Analytics</span>
+                  <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">AI, Blockchain & Data Analytics</span>
                   <span className="text-gray-400 text-xs">Medium</span>
                 </div>
                 <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-blue-600 transition-colors">
@@ -373,7 +400,7 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
               </div>
             </a>
 
-            {/* Article 2 */}
+            {/* Article 3 - Chainlink */}
             <a
               href="https://blog.chain.link/blockchain-ai-use-cases/"
               target="_blank"
@@ -393,33 +420,6 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">
                   Exploring the powerful synergies between artificial intelligence and blockchain technology.
-                </p>
-                <span className="text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Read Article <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </a>
-
-            {/* Article 3 */}
-            <a
-              href="https://www.theatlantic.com/technology/archive/2022/02/future-internet-blockchain-investment-banking/621480/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-            >
-              <div className="h-48 bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-500 flex items-center justify-center">
-                <Coins className="w-20 h-20 text-white/80 group-hover:scale-110 transition-transform" />
-              </div>
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Finance</span>
-                  <span className="text-gray-400 text-xs">The Atlantic</span>
-                </div>
-                <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-blue-600 transition-colors">
-                  The Internet Is Just Investment Banking Now
-                </h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  A thought-provoking analysis on how blockchain is reshaping the future of internet and finance.
                 </p>
                 <span className="text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
                   Read Article <ArrowRight className="w-4 h-4" />
