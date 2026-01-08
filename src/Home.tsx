@@ -143,8 +143,10 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               IoMarkets<sup className="text-lg md:text-xl">®</sup> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Organization</span>
             </h1>
-            <p className="text-xl md:text-2xl text-cyan-100 mb-4 font-light italic">
-              Where Ambition meets Innovation and Strategy meets Execution
+            <p className="text-xl md:text-2xl mb-4 font-bold relative overflow-hidden">
+              <span className="relative inline-block bg-gradient-to-r from-cyan-200 via-white to-cyan-200 bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
+                Where Ambition meets Innovation and Strategy meets Execution
+              </span>
             </p>
             <p className="text-lg text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
               The most holistic AI-first financial technology ecosystem powering the future of financial services by combining the latest innovation in <span className="text-cyan-400 font-medium">Artificial Intelligence</span>, <span className="text-blue-400 font-medium">Data Analytics</span>, and <span className="text-indigo-400 font-medium">Digital Assets</span>.
