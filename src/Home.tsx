@@ -1,12 +1,97 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet';
-import { Users, TrendingUp, Brain, Briefcase, Wallet, Coins, Star, Tv, ArrowRight, Monitor, Newspaper } from 'lucide-react';
+import { Users, TrendingUp, Brain, Briefcase, Wallet, Coins, Star, Tv, ArrowRight, Monitor, Newspaper, Sparkles } from 'lucide-react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 interface IoMarketsOrgProps {
   onDomainChange?: (domain: string) => void;
 }
 
+// Floating gold diamonds and rings - distinct from .xyz cubes
+function FloatingElements() {
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* Large floating diamond */}
+      <div className="absolute top-20 left-[10%] w-20 h-20 float-elegant">
+        <div className="w-full h-full border border-[#C9A962]/30 bg-[#C9A962]/5 transform rotate-45 backdrop-blur-sm" />
+      </div>
+
+      {/* Medium diamond */}
+      <div className="absolute top-40 right-[15%] w-14 h-14 float-medium" style={{ animationDelay: '1s' }}>
+        <div className="w-full h-full border border-[#E8D5A3]/25 bg-[#E8D5A3]/5 transform rotate-45 backdrop-blur-sm" />
+      </div>
+
+      {/* Small diamonds */}
+      <div className="absolute bottom-32 left-[20%] w-10 h-10 float-fast" style={{ animationDelay: '0.5s' }}>
+        <div className="w-full h-full border border-[#C9A962]/30 bg-[#C9A962]/5 transform rotate-45 backdrop-blur-sm" />
+      </div>
+
+      <div className="absolute top-60 left-[5%] w-6 h-6 float-medium" style={{ animationDelay: '2s' }}>
+        <div className="w-full h-full border border-[#B8954F]/30 bg-[#B8954F]/5 transform rotate-45 backdrop-blur-sm" />
+      </div>
+
+      <div className="absolute bottom-40 right-[10%] w-16 h-16 float-elegant" style={{ animationDelay: '1.5s' }}>
+        <div className="w-full h-full border border-[#C9A962]/20 bg-[#C9A962]/5 transform rotate-45 backdrop-blur-sm" />
+      </div>
+
+      {/* Floating rings - different from .xyz */}
+      <div className="absolute top-32 right-[25%] w-28 h-28 float-medium opacity-40" style={{ animationDelay: '0.7s' }}>
+        <div className="w-full h-full border-2 border-[#C9A962]/20 rounded-full" />
+      </div>
+
+      <div className="absolute bottom-48 left-[30%] w-20 h-20 float-elegant opacity-30" style={{ animationDelay: '2.5s' }}>
+        <div className="w-full h-full border-2 border-[#E8D5A3]/20 rounded-full" />
+      </div>
+
+      {/* Rotating ring - unique to .org */}
+      <div className="absolute top-1/2 right-[8%] w-32 h-32 rotate-slow opacity-20">
+        <div className="w-full h-full border border-[#C9A962]/30 rounded-full" />
+        <div className="absolute inset-2 border border-dashed border-[#C9A962]/20 rounded-full" />
+      </div>
+    </div>
+  );
+}
+
+// Animated gold wave lines - distinct from .xyz straight lines
+function AnimatedGoldLines() {
+  return (
+    <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-30" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="gold-line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#C9A962" stopOpacity="0" />
+          <stop offset="50%" stopColor="#C9A962" stopOpacity="0.8" />
+          <stop offset="100%" stopColor="#E8D5A3" stopOpacity="0" />
+        </linearGradient>
+      </defs>
+      {/* Curved wave lines */}
+      <path d="M0,150 Q300,100 600,150 T1200,150 T1800,150" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none">
+        <animate attributeName="d"
+          values="M0,150 Q300,100 600,150 T1200,150 T1800,150;M0,150 Q300,200 600,150 T1200,150 T1800,150;M0,150 Q300,100 600,150 T1200,150 T1800,150"
+          dur="8s" repeatCount="indefinite" />
+      </path>
+      <path d="M0,300 Q400,250 800,300 T1600,300" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none" opacity="0.5">
+        <animate attributeName="d"
+          values="M0,300 Q400,250 800,300 T1600,300;M0,300 Q400,350 800,300 T1600,300;M0,300 Q400,250 800,300 T1600,300"
+          dur="10s" repeatCount="indefinite" />
+      </path>
+      <path d="M0,450 Q250,400 500,450 T1000,450 T1500,450" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none" opacity="0.3">
+        <animate attributeName="d"
+          values="M0,450 Q250,400 500,450 T1000,450 T1500,450;M0,450 Q250,500 500,450 T1000,450 T1500,450;M0,450 Q250,400 500,450 T1000,450 T1500,450"
+          dur="7s" repeatCount="indefinite" />
+      </path>
+    </svg>
+  );
+}
+
 const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainChange }) => {
+  const heroRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"]
+  });
+
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.95]);
   const handleServiceClick = (domain: string, isExternal: boolean = false) => {
     if (isExternal) {
       // Open external link in a new tab
@@ -129,40 +214,133 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
         <meta property="twitter:description" content="IoMarkets® - The most holistic AI-powered Web3 financial ecosystem. Email: info@iomarkets.org. IoMarkets® LLC. 30 N Gould St Ste R, Sheridan, Wyoming 82801." />
       </Helmet>
 
-      {/* Hero Section */}
-      <section className="py-24 relative overflow-hidden z-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900"></div>
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center max-w-5xl mx-auto animate-fade-up">
-            <div className="inline-block mb-6">
-              <span className="px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-full text-cyan-300 text-sm font-medium">
-                AI-First Financial Technology
+      {/* Hero Section - Premium Animated */}
+      <section ref={heroRef} className="relative min-h-screen overflow-hidden flex items-center">
+        {/* Animated background layers */}
+        <div className="absolute inset-0">
+          {/* Base gradient - gold tinted navy */}
+          <div className="absolute inset-0 corporate-gradient-bg" />
+
+          {/* Elegant grid pattern - distinct from .xyz cyber-grid */}
+          <div className="absolute inset-0 elegant-grid" />
+
+          {/* Diamond pattern overlay - distinct from .xyz hex pattern */}
+          <div className="absolute inset-0 diamond-pattern opacity-50" />
+
+          {/* Gold orbs */}
+          <div className="absolute top-0 left-1/4 w-[700px] h-[700px] bg-[#C9A962] orb-gold" />
+          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#B8954F] orb-gold" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-gradient-to-r from-[#C9A962]/15 to-[#E8D5A3]/10 rounded-full blur-[120px]" />
+        </div>
+
+        {/* Floating elements */}
+        <FloatingElements />
+        <AnimatedGoldLines />
+
+        <motion.div
+          style={{ opacity, scale }}
+          className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40 z-10"
+        >
+          <div className="text-center max-w-5xl mx-auto">
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center gap-3 px-6 py-3 rounded-full glass-gold mb-10"
+            >
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping-gold absolute inline-flex h-full w-full rounded-full bg-[#C9A962] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-[#C9A962]"></span>
               </span>
-            </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              IoMarkets<sup className="text-lg md:text-xl">®</sup> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Organization</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-4 font-bold relative overflow-hidden">
+              <span className="text-sm font-semibold text-white">
+                <span className="gradient-text-gold">AI-First</span> Financial Technology
+              </span>
+              <Sparkles className="w-4 h-4 text-[#C9A962]" />
+            </motion.div>
+
+            {/* Headline */}
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-5xl sm:text-6xl lg:text-8xl font-bold text-white mb-8 leading-[1.1] tracking-tight"
+            >
+              <span className="relative inline-block">
+                IoMarkets<sup className="text-lg md:text-xl">®</sup>
+                <motion.span
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#C9A962] to-[#E8D5A3] rounded-full origin-left"
+                />
+              </span>
+              <br />
+              <span className="gradient-text-gold">Organization</span>
+            </motion.h1>
+
+            {/* Gold shimmer tagline */}
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-xl md:text-2xl mb-6 font-bold"
+            >
               <span className="relative inline-block bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-300 bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
                 Where Ambition meets Innovation and Strategy meets Execution
               </span>
-            </p>
-            <p className="text-lg text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-              The most holistic AI-first financial technology ecosystem powering the future of financial services by combining the latest innovation in <span className="text-cyan-400 font-medium">Artificial Intelligence</span>, <span className="text-blue-400 font-medium">Data Analytics</span>, and <span className="text-indigo-400 font-medium">Digital Assets</span>.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 flex items-center justify-center shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105">
-                Explore Ecosystem <ArrowRight className="w-5 h-5 ml-2" />
+            </motion.p>
+
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-lg sm:text-xl text-gray-400 mb-14 max-w-3xl mx-auto leading-relaxed"
+            >
+              The most holistic AI-first financial technology ecosystem powering the future of financial services by combining the latest innovation in <span className="text-[#C9A962] font-medium">Artificial Intelligence</span>, <span className="text-[#E8D5A3] font-medium">Data Analytics</span>, and <span className="text-[#B8954F] font-medium">Digital Assets</span>.
+            </motion.p>
+
+            {/* CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-col sm:flex-row items-center justify-center gap-5"
+            >
+              <button className="group relative w-full sm:w-auto px-10 py-5 rounded-2xl bg-gradient-to-r from-[#C9A962] to-[#B8954F] text-navy-900 font-bold text-lg overflow-hidden shadow-lg shadow-[#C9A962]/25 hover:shadow-[#C9A962]/40 transition-all duration-300 hover:scale-105">
+                <span className="relative z-10 flex items-center justify-center gap-3">
+                  Explore Ecosystem
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#E8D5A3] to-[#C9A962] opacity-0 group-hover:opacity-100 transition-opacity" />
               </button>
-              <button className="border-2 border-white/30 text-white bg-white/5 backdrop-blur-sm px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-slate-900 transition-all duration-300 shadow-lg hover:scale-105">
+              <button className="group w-full sm:w-auto px-10 py-5 rounded-2xl glass text-white font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3 pulse-gold">
                 Partner With Us
               </button>
-            </div>
+            </motion.div>
           </div>
-        </div>
-        {/* Decorative elements */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+        </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
+        >
+          <span className="text-sm text-gray-500">Scroll to explore</span>
+          <div className="w-6 h-10 rounded-full border-2 border-[#C9A962]/50 flex justify-center pt-2">
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              className="w-1.5 h-1.5 rounded-full bg-[#C9A962]"
+            />
+          </div>
+        </motion.div>
+
+        {/* Bottom gradient fade to white */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-10"></div>
       </section>
 
       {/* Ecosystem Overview */}
