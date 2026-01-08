@@ -98,7 +98,13 @@ export function Header() {
                           href={domain.current ? '/' : domain.url}
                           target={domain.current ? undefined : '_blank'}
                           rel={domain.current ? undefined : 'noopener noreferrer'}
-                          onClick={() => setEcosystemOpen(false)}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setEcosystemOpen(false);
+                            if (!domain.current) {
+                              window.open(domain.url, '_blank', 'noopener,noreferrer');
+                            }
+                          }}
                           className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors hover:bg-slate-700 ${
                             domain.current ? 'bg-slate-700 border-r-2 border-amber-500' : ''
                           }`}
@@ -141,7 +147,13 @@ export function Header() {
                           href={domain.current ? '/' : domain.url}
                           target={domain.current ? undefined : '_blank'}
                           rel={domain.current ? undefined : 'noopener noreferrer'}
-                          onClick={() => setEcosystemOpen(false)}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setEcosystemOpen(false);
+                            if (!domain.current) {
+                              window.open(domain.url, '_blank', 'noopener,noreferrer');
+                            }
+                          }}
                           className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-colors hover:bg-slate-700 ${
                             domain.current ? 'bg-slate-700 border-r-2 border-amber-500' : ''
                           }`}
