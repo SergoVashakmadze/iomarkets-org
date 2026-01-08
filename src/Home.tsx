@@ -7,60 +7,60 @@ interface IoMarketsOrgProps {
   onDomainChange?: (domain: string) => void;
 }
 
-// Floating gold diamonds and rings - distinct from .xyz cubes
+// Floating subtle diamonds and rings - distinct from .xyz cubes
 function FloatingElements() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Large floating diamond */}
-      <div className="absolute top-20 left-[10%] w-20 h-20 float-elegant">
-        <div className="w-full h-full border border-[#C9A962]/30 bg-[#C9A962]/5 transform rotate-45 backdrop-blur-sm" />
+      {/* Large floating diamond - more subtle */}
+      <div className="absolute top-20 left-[10%] w-16 h-16 float-elegant">
+        <div className="w-full h-full border border-[#9A8B7A]/20 bg-[#9A8B7A]/3 transform rotate-45 backdrop-blur-sm" />
       </div>
 
       {/* Medium diamond */}
-      <div className="absolute top-40 right-[15%] w-14 h-14 float-medium" style={{ animationDelay: '1s' }}>
-        <div className="w-full h-full border border-[#E8D5A3]/25 bg-[#E8D5A3]/5 transform rotate-45 backdrop-blur-sm" />
+      <div className="absolute top-40 right-[15%] w-12 h-12 float-medium" style={{ animationDelay: '1s' }}>
+        <div className="w-full h-full border border-[#A69080]/15 bg-[#A69080]/3 transform rotate-45 backdrop-blur-sm" />
       </div>
 
       {/* Small diamonds */}
-      <div className="absolute bottom-32 left-[20%] w-10 h-10 float-fast" style={{ animationDelay: '0.5s' }}>
-        <div className="w-full h-full border border-[#C9A962]/30 bg-[#C9A962]/5 transform rotate-45 backdrop-blur-sm" />
+      <div className="absolute bottom-32 left-[20%] w-8 h-8 float-fast" style={{ animationDelay: '0.5s' }}>
+        <div className="w-full h-full border border-[#9A8B7A]/20 bg-[#9A8B7A]/3 transform rotate-45 backdrop-blur-sm" />
       </div>
 
-      <div className="absolute top-60 left-[5%] w-6 h-6 float-medium" style={{ animationDelay: '2s' }}>
-        <div className="w-full h-full border border-[#B8954F]/30 bg-[#B8954F]/5 transform rotate-45 backdrop-blur-sm" />
+      <div className="absolute top-60 left-[5%] w-5 h-5 float-medium" style={{ animationDelay: '2s' }}>
+        <div className="w-full h-full border border-[#8B7355]/20 bg-[#8B7355]/3 transform rotate-45 backdrop-blur-sm" />
       </div>
 
-      <div className="absolute bottom-40 right-[10%] w-16 h-16 float-elegant" style={{ animationDelay: '1.5s' }}>
-        <div className="w-full h-full border border-[#C9A962]/20 bg-[#C9A962]/5 transform rotate-45 backdrop-blur-sm" />
+      <div className="absolute bottom-40 right-[10%] w-14 h-14 float-elegant" style={{ animationDelay: '1.5s' }}>
+        <div className="w-full h-full border border-[#9A8B7A]/15 bg-[#9A8B7A]/3 transform rotate-45 backdrop-blur-sm" />
       </div>
 
-      {/* Floating rings - different from .xyz */}
-      <div className="absolute top-32 right-[25%] w-28 h-28 float-medium opacity-40" style={{ animationDelay: '0.7s' }}>
-        <div className="w-full h-full border-2 border-[#C9A962]/20 rounded-full" />
+      {/* Floating rings - subtle */}
+      <div className="absolute top-32 right-[25%] w-24 h-24 float-medium opacity-30" style={{ animationDelay: '0.7s' }}>
+        <div className="w-full h-full border border-[#9A8B7A]/15 rounded-full" />
       </div>
 
-      <div className="absolute bottom-48 left-[30%] w-20 h-20 float-elegant opacity-30" style={{ animationDelay: '2.5s' }}>
-        <div className="w-full h-full border-2 border-[#E8D5A3]/20 rounded-full" />
+      <div className="absolute bottom-48 left-[30%] w-16 h-16 float-elegant opacity-25" style={{ animationDelay: '2.5s' }}>
+        <div className="w-full h-full border border-[#A69080]/15 rounded-full" />
       </div>
 
       {/* Rotating ring - unique to .org */}
-      <div className="absolute top-1/2 right-[8%] w-32 h-32 rotate-slow opacity-20">
-        <div className="w-full h-full border border-[#C9A962]/30 rounded-full" />
-        <div className="absolute inset-2 border border-dashed border-[#C9A962]/20 rounded-full" />
+      <div className="absolute top-1/2 right-[8%] w-28 h-28 rotate-slow opacity-15">
+        <div className="w-full h-full border border-[#9A8B7A]/20 rounded-full" />
+        <div className="absolute inset-2 border border-dashed border-[#9A8B7A]/10 rounded-full" />
       </div>
     </div>
   );
 }
 
-// Animated gold wave lines - distinct from .xyz straight lines
+// Animated subtle wave lines - distinct from .xyz straight lines
 function AnimatedGoldLines() {
   return (
-    <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-30" xmlns="http://www.w3.org/2000/svg">
+    <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="gold-line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#C9A962" stopOpacity="0" />
-          <stop offset="50%" stopColor="#C9A962" stopOpacity="0.8" />
-          <stop offset="100%" stopColor="#E8D5A3" stopOpacity="0" />
+          <stop offset="0%" stopColor="#9A8B7A" stopOpacity="0" />
+          <stop offset="50%" stopColor="#9A8B7A" stopOpacity="0.6" />
+          <stop offset="100%" stopColor="#A69080" stopOpacity="0" />
         </linearGradient>
       </defs>
       {/* Curved wave lines */}
@@ -69,12 +69,12 @@ function AnimatedGoldLines() {
           values="M0,150 Q300,100 600,150 T1200,150 T1800,150;M0,150 Q300,200 600,150 T1200,150 T1800,150;M0,150 Q300,100 600,150 T1200,150 T1800,150"
           dur="8s" repeatCount="indefinite" />
       </path>
-      <path d="M0,300 Q400,250 800,300 T1600,300" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none" opacity="0.5">
+      <path d="M0,300 Q400,250 800,300 T1600,300" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none" opacity="0.4">
         <animate attributeName="d"
           values="M0,300 Q400,250 800,300 T1600,300;M0,300 Q400,350 800,300 T1600,300;M0,300 Q400,250 800,300 T1600,300"
           dur="10s" repeatCount="indefinite" />
       </path>
-      <path d="M0,450 Q250,400 500,450 T1000,450 T1500,450" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none" opacity="0.3">
+      <path d="M0,450 Q250,400 500,450 T1000,450 T1500,450" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none" opacity="0.2">
         <animate attributeName="d"
           values="M0,450 Q250,400 500,450 T1000,450 T1500,450;M0,450 Q250,500 500,450 T1000,450 T1500,450;M0,450 Q250,400 500,450 T1000,450 T1500,450"
           dur="7s" repeatCount="indefinite" />
@@ -227,10 +227,10 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
           {/* Diamond pattern overlay - distinct from .xyz hex pattern */}
           <div className="absolute inset-0 diamond-pattern opacity-50" />
 
-          {/* Gold orbs */}
-          <div className="absolute top-0 left-1/4 w-[700px] h-[700px] bg-[#C9A962] orb-gold" />
-          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#B8954F] orb-gold" style={{ animationDelay: '2s' }} />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-gradient-to-r from-[#C9A962]/15 to-[#E8D5A3]/10 rounded-full blur-[120px]" />
+          {/* Subtle orbs - more muted colors */}
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#8B7355] orb-gold" />
+          <div className="absolute bottom-0 right-1/4 w-[450px] h-[450px] bg-[#6B5B4F] orb-gold" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-[#8B7355]/10 to-[#A69080]/8 rounded-full blur-[120px]" />
         </div>
 
         {/* Floating elements */}
@@ -259,15 +259,32 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
               <Sparkles className="w-4 h-4 text-[#C9A962]" />
             </motion.div>
 
-            {/* Headline */}
+            {/* Headline - Smaller, on one line */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl sm:text-6xl lg:text-8xl font-bold text-white mb-8 leading-[1.1] tracking-tight"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 leading-[1.1] tracking-tight"
             >
               <span className="relative inline-block">
-                IoMarkets<sup className="text-lg md:text-xl">®</sup>
+                IoMarkets<sup className="text-[10px] sm:text-xs absolute -top-1 -right-3">®</sup>
+              </span>
+              {' '}
+              <span className="text-gray-300">Organization</span>
+            </motion.h1>
+
+            {/* Tagline with animated underline like .xyz "Create" */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mb-8"
+            >
+              <span className="relative inline-block">
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-300 bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
+                  Where Ambition meets Innovation and Strategy meets Execution
+                </span>
+                <sup className="text-[10px] sm:text-xs text-amber-300/70 ml-1">™</sup>
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
@@ -275,21 +292,7 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
                   className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#C9A962] to-[#E8D5A3] rounded-full origin-left"
                 />
               </span>
-              <br />
-              <span className="gradient-text-gold">Organization</span>
-            </motion.h1>
-
-            {/* Gold shimmer tagline */}
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl mb-6 font-bold"
-            >
-              <span className="relative inline-block bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-300 bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
-                Where Ambition meets Innovation and Strategy meets Execution
-              </span>
-            </motion.p>
+            </motion.div>
 
             {/* Subtitle */}
             <motion.p
