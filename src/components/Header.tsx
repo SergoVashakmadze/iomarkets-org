@@ -22,18 +22,25 @@ const ecosystemDomains = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [ecosystemOpen, setEcosystemOpen] = useState(false);
-  const ecosystemRef = useRef<HTMLDivElement>(null);
+  const ecosystemDesktopRef = useRef<HTMLDivElement>(null);
+  const ecosystemMobileRef = useRef<HTMLDivElement>(null);
 
   // Close dropdowns when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (ecosystemRef.current && !ecosystemRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      const isOutsideDesktop = ecosystemDesktopRef.current && !ecosystemDesktopRef.current.contains(target);
+      const isOutsideMobile = ecosystemMobileRef.current && !ecosystemMobileRef.current.contains(target);
+
+      // Only close if clicking outside both refs (one will be null based on screen size)
+      if ((isOutsideDesktop || !ecosystemDesktopRef.current) &&
+          (isOutsideMobile || !ecosystemMobileRef.current)) {
         setEcosystemOpen(false);
       }
     }
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
   // Prevent body scroll when mobile menu is open
@@ -70,7 +77,7 @@ export function Header() {
             {/* Desktop Right Section */}
             <div className="hidden lg:flex items-center gap-4">
               {/* Ecosystem Button */}
-              <div ref={ecosystemRef} className="relative">
+              <div ref={ecosystemDesktopRef} className="relative">
                 <button
                   onClick={() => setEcosystemOpen(!ecosystemOpen)}
                   className="flex items-center gap-2 px-6 py-2.5 rounded-full text-white text-sm font-medium transition-colors bg-slate-800 border border-slate-700 hover:bg-slate-700"
@@ -89,6 +96,9 @@ export function Header() {
                         <a
                           key={domain.name}
                           href={domain.current ? '/' : domain.url}
+                          target={domain.current ? undefined : '_blank'}
+                          rel={domain.current ? undefined : 'noopener noreferrer'}
+                          onClick={() => setEcosystemOpen(false)}
                           className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors hover:bg-slate-700 ${
                             domain.current ? 'bg-slate-700 border-r-2 border-amber-500' : ''
                           }`}
@@ -113,7 +123,7 @@ export function Header() {
             {/* Mobile Right Section */}
             <div className="lg:hidden flex items-center gap-2">
               {/* Mobile Ecosystem Button */}
-              <div ref={ecosystemRef} className="relative">
+              <div ref={ecosystemMobileRef} className="relative">
                 <button
                   onClick={() => setEcosystemOpen(!ecosystemOpen)}
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-white text-xs font-medium bg-slate-800 border border-slate-700"
@@ -129,6 +139,9 @@ export function Header() {
                         <a
                           key={domain.name}
                           href={domain.current ? '/' : domain.url}
+                          target={domain.current ? undefined : '_blank'}
+                          rel={domain.current ? undefined : 'noopener noreferrer'}
+                          onClick={() => setEcosystemOpen(false)}
                           className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-colors hover:bg-slate-700 ${
                             domain.current ? 'bg-slate-700 border-r-2 border-amber-500' : ''
                           }`}
