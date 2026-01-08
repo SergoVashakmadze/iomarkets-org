@@ -271,7 +271,7 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
                 <span className="relative inline-flex rounded-full h-4 w-4 bg-[#DAA520]"></span>
               </span>
               <span className="text-base font-bold text-white tracking-wide">
-                <span className="gradient-text-gold">AI-First</span> Financial Technology
+                <span className="gradient-text-gold">AI-First</span> Financial Ecosystem
               </span>
               <Sparkles className="w-5 h-5 text-[#DAA520]" />
             </motion.div>
