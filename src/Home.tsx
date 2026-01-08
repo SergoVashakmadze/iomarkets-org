@@ -130,26 +130,37 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
       </Helmet>
 
       {/* Hero Section */}
-      <section className="py-20 relative overflow-hidden z-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-50/80 to-blue-50/80"></div>
-        <div className="container mx-auto px-6">
-          <div className="text-center max-w-4xl mx-auto animate-fade-up relative z-10">
-            <h1 className="text-5xl font-bold text-navy-900 mb-6">
-              IoMarkets<sup className="text-xs">®</sup> Ecosystem
+      <section className="py-24 relative overflow-hidden z-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center max-w-5xl mx-auto animate-fade-up">
+            <div className="inline-block mb-6">
+              <span className="px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-full text-cyan-300 text-sm font-medium">
+                AI-First Financial Technology
+              </span>
+            </div>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              IoMarkets<sup className="text-lg md:text-xl">®</sup> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Organization</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              The most holistic financial technology ecosystem powering the future of capital markets by combining the latest innovation in Digital Assets and Artificial Intelligence.
+            <p className="text-xl md:text-2xl text-cyan-100 mb-4 font-light italic">
+              Where Ambition meets Innovation and Strategy meets Execution
+            </p>
+            <p className="text-lg text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+              The most holistic AI-first financial technology ecosystem powering the future of financial services by combining the latest innovation in <span className="text-cyan-400 font-medium">Artificial Intelligence</span>, <span className="text-blue-400 font-medium">Data Analytics</span>, and <span className="text-indigo-400 font-medium">Digital Assets</span>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center justify-center shadow-md">
-                Explore Ecosystem <ArrowRight className="w-4 h-4 ml-2" />
+              <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 flex items-center justify-center shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105">
+                Explore Ecosystem <ArrowRight className="w-5 h-5 ml-2" />
               </button>
-              <button className="border-2 border-navy-900 text-navy-900 bg-white px-8 py-3 rounded-lg font-medium hover:bg-navy-900 hover:text-white transition-colors shadow-md">
+              <button className="border-2 border-white/30 text-white bg-white/5 backdrop-blur-sm px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-slate-900 transition-all duration-300 shadow-lg hover:scale-105">
                 Partner With Us
               </button>
             </div>
           </div>
         </div>
+        {/* Decorative elements */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
       {/* Ecosystem Overview */}
@@ -317,6 +328,104 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
                 <p className="text-gray-600 text-sm">{team.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Insights */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50 relative z-10">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-4 inline-block">
+              Industry Insights
+            </span>
+            <h2 className="text-3xl font-bold text-navy-900 mb-4">Featured Reading</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Explore thought leadership on the intersection of AI, blockchain, and the future of finance
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Article 1 */}
+            <a
+              href="https://medium.datadriveninvestor.com/ai-blockchain-and-data-analytics-in-private-markets-a91be174dc2f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="h-48 bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-500 flex items-center justify-center">
+                <Brain className="w-20 h-20 text-white/80 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">AI & Analytics</span>
+                  <span className="text-gray-400 text-xs">Medium</span>
+                </div>
+                <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  AI, Blockchain, and Data Analytics in Private Markets
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  How emerging technologies are transforming private market investments and data-driven decision making.
+                </p>
+                <span className="text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read Article <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </a>
+
+            {/* Article 2 */}
+            <a
+              href="https://blog.chain.link/blockchain-ai-use-cases/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="h-48 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 flex items-center justify-center">
+                <TrendingUp className="w-20 h-20 text-white/80 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-2 py-1 bg-indigo-100 text-indigo-700 rounded text-xs font-medium">Blockchain</span>
+                  <span className="text-gray-400 text-xs">Chainlink</span>
+                </div>
+                <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  Use Cases of AI in Blockchain
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Exploring the powerful synergies between artificial intelligence and blockchain technology.
+                </p>
+                <span className="text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read Article <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </a>
+
+            {/* Article 3 */}
+            <a
+              href="https://www.theatlantic.com/technology/archive/2022/02/future-internet-blockchain-investment-banking/621480/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="h-48 bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-500 flex items-center justify-center">
+                <Coins className="w-20 h-20 text-white/80 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Finance</span>
+                  <span className="text-gray-400 text-xs">The Atlantic</span>
+                </div>
+                <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  The Internet Is Just Investment Banking Now
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  A thought-provoking analysis on how blockchain is reshaping the future of internet and finance.
+                </p>
+                <span className="text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read Article <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
