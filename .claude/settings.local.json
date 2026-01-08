@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npx vite --port 5178)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git merge:*)",
+      "Bash(cat:*)",
+      "Bash(npm run deploy:*)",
+      "Bash(npx wrangler pages deploy:*)",
+      "Bash(npx wrangler:*)",
+      "Bash(npm install:*)",
+      "Bash(git fetch:*)",
+      "Bash(git rebase:*)",
+      "Bash(git checkout:*)"
+    ]
+  }
+}
