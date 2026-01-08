@@ -279,7 +279,7 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
               <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Organization</span>
             </motion.h1>
 
-            {/* Tagline - Two lines with institutional styling */}
+            {/* Tagline - Two lines with animated gradient bold words */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -287,21 +287,23 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
               className="mb-10"
             >
               <div className="relative inline-block">
-                <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-semibold leading-relaxed">
-                  <span className="bg-gradient-to-r from-[#B8860B] via-[#DAA520] to-[#B8860B] bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
-                    Where Ambition meets Innovation
-                  </span>
+                <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-medium leading-relaxed text-gray-300">
+                  <span>Where </span>
+                  <span className="gradient-text-animated-teal font-bold">Ambition</span>
+                  <span> meets </span>
+                  <span className="gradient-text-animated-violet font-bold">Innovation</span>
                   <br />
-                  <span className="bg-gradient-to-r from-[#DAA520] via-[#CFB53B] to-[#DAA520] bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
-                    & Strategy meets Execution
-                  </span>
-                  <span className="text-[#B8860B] text-base sm:text-lg lg:text-xl font-bold align-super ml-1">™</span>
+                  <span>& </span>
+                  <span className="gradient-text-animated-emerald font-bold">Strategy</span>
+                  <span> meets </span>
+                  <span className="gradient-text-animated-blue font-bold">Execution</span>
+                  <span className="text-[#DAA520] text-base sm:text-lg lg:text-xl font-bold align-super ml-1">™</span>
                 </div>
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: 0.5 }}
-                  className="absolute -bottom-3 left-1/4 w-1/2 h-1 bg-gradient-to-r from-transparent via-[#B8860B] to-transparent rounded-full origin-center"
+                  className="absolute -bottom-3 left-1/4 w-1/2 h-1 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent rounded-full origin-center"
                 />
               </div>
             </motion.div>
