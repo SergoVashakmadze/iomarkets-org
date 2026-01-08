@@ -341,7 +341,7 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
             </span>
             <h2 className="text-3xl font-bold text-navy-900 mb-4">Featured Reading</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore thought leadership on the intersection of AI, blockchain, and the future of finance
+              Explore thought leadership on the intersection of AI, data analytics, blockchain, and the future of financial services
             </p>
           </div>
 
