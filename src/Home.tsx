@@ -7,74 +7,79 @@ interface IoMarketsOrgProps {
   onDomainChange?: (domain: string) => void;
 }
 
-// Floating subtle diamonds and rings - distinct from .xyz cubes
+// Floating bold diamonds and rings - vibrant gold theme
 function FloatingElements() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Large floating diamond - more subtle */}
-      <div className="absolute top-20 left-[10%] w-16 h-16 float-elegant">
-        <div className="w-full h-full border border-[#9A8B7A]/20 bg-[#9A8B7A]/3 transform rotate-45 backdrop-blur-sm" />
+      {/* Large floating diamond - BOLD gold */}
+      <div className="absolute top-20 left-[10%] w-20 h-20 float-elegant">
+        <div className="w-full h-full border-2 border-[#FFD700]/40 bg-gradient-to-br from-[#FFD700]/10 to-[#FFA500]/5 transform rotate-45 backdrop-blur-sm shadow-lg shadow-[#FFD700]/20" />
       </div>
 
       {/* Medium diamond */}
-      <div className="absolute top-40 right-[15%] w-12 h-12 float-medium" style={{ animationDelay: '1s' }}>
-        <div className="w-full h-full border border-[#A69080]/15 bg-[#A69080]/3 transform rotate-45 backdrop-blur-sm" />
+      <div className="absolute top-40 right-[15%] w-16 h-16 float-medium" style={{ animationDelay: '1s' }}>
+        <div className="w-full h-full border-2 border-[#F0B90B]/35 bg-gradient-to-br from-[#F0B90B]/8 to-[#FFD700]/5 transform rotate-45 backdrop-blur-sm" />
       </div>
 
       {/* Small diamonds */}
-      <div className="absolute bottom-32 left-[20%] w-8 h-8 float-fast" style={{ animationDelay: '0.5s' }}>
-        <div className="w-full h-full border border-[#9A8B7A]/20 bg-[#9A8B7A]/3 transform rotate-45 backdrop-blur-sm" />
+      <div className="absolute bottom-32 left-[20%] w-12 h-12 float-fast" style={{ animationDelay: '0.5s' }}>
+        <div className="w-full h-full border-2 border-[#FFD700]/30 bg-[#FFD700]/8 transform rotate-45 backdrop-blur-sm" />
       </div>
 
-      <div className="absolute top-60 left-[5%] w-5 h-5 float-medium" style={{ animationDelay: '2s' }}>
-        <div className="w-full h-full border border-[#8B7355]/20 bg-[#8B7355]/3 transform rotate-45 backdrop-blur-sm" />
+      <div className="absolute top-60 left-[5%] w-8 h-8 float-medium" style={{ animationDelay: '2s' }}>
+        <div className="w-full h-full border border-[#FFA500]/40 bg-[#FFA500]/10 transform rotate-45 backdrop-blur-sm" />
       </div>
 
-      <div className="absolute bottom-40 right-[10%] w-14 h-14 float-elegant" style={{ animationDelay: '1.5s' }}>
-        <div className="w-full h-full border border-[#9A8B7A]/15 bg-[#9A8B7A]/3 transform rotate-45 backdrop-blur-sm" />
+      <div className="absolute bottom-40 right-[10%] w-18 h-18 float-elegant" style={{ animationDelay: '1.5s' }}>
+        <div className="w-full h-full border-2 border-[#FFD700]/25 bg-gradient-to-br from-[#FFD700]/8 to-transparent transform rotate-45 backdrop-blur-sm" />
       </div>
 
-      {/* Floating rings - subtle */}
-      <div className="absolute top-32 right-[25%] w-24 h-24 float-medium opacity-30" style={{ animationDelay: '0.7s' }}>
-        <div className="w-full h-full border border-[#9A8B7A]/15 rounded-full" />
+      {/* Floating rings - BOLD */}
+      <div className="absolute top-32 right-[25%] w-28 h-28 float-medium opacity-60" style={{ animationDelay: '0.7s' }}>
+        <div className="w-full h-full border-2 border-[#FFD700]/30 rounded-full shadow-lg shadow-[#FFD700]/10" />
       </div>
 
-      <div className="absolute bottom-48 left-[30%] w-16 h-16 float-elegant opacity-25" style={{ animationDelay: '2.5s' }}>
-        <div className="w-full h-full border border-[#A69080]/15 rounded-full" />
+      <div className="absolute bottom-48 left-[30%] w-20 h-20 float-elegant opacity-50" style={{ animationDelay: '2.5s' }}>
+        <div className="w-full h-full border-2 border-[#F0B90B]/25 rounded-full" />
       </div>
 
-      {/* Rotating ring - unique to .org */}
-      <div className="absolute top-1/2 right-[8%] w-28 h-28 rotate-slow opacity-15">
-        <div className="w-full h-full border border-[#9A8B7A]/20 rounded-full" />
-        <div className="absolute inset-2 border border-dashed border-[#9A8B7A]/10 rounded-full" />
+      {/* Rotating ring - unique to .org - BOLD */}
+      <div className="absolute top-1/2 right-[8%] w-32 h-32 rotate-slow opacity-40">
+        <div className="w-full h-full border-2 border-[#FFD700]/30 rounded-full" />
+        <div className="absolute inset-3 border border-dashed border-[#FFD700]/20 rounded-full" />
       </div>
     </div>
   );
 }
 
-// Animated subtle wave lines - distinct from .xyz straight lines
+// Animated BOLD wave lines - vibrant gold
 function AnimatedGoldLines() {
   return (
-    <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
+    <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="gold-line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#9A8B7A" stopOpacity="0" />
-          <stop offset="50%" stopColor="#9A8B7A" stopOpacity="0.6" />
-          <stop offset="100%" stopColor="#A69080" stopOpacity="0" />
+          <stop offset="0%" stopColor="#FFD700" stopOpacity="0" />
+          <stop offset="50%" stopColor="#FFD700" stopOpacity="0.8" />
+          <stop offset="100%" stopColor="#FFA500" stopOpacity="0" />
+        </linearGradient>
+        <linearGradient id="gold-line-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#F0B90B" stopOpacity="0" />
+          <stop offset="50%" stopColor="#F0B90B" stopOpacity="0.6" />
+          <stop offset="100%" stopColor="#FFD700" stopOpacity="0" />
         </linearGradient>
       </defs>
-      {/* Curved wave lines */}
-      <path d="M0,150 Q300,100 600,150 T1200,150 T1800,150" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none">
+      {/* Curved wave lines - BOLD */}
+      <path d="M0,150 Q300,100 600,150 T1200,150 T1800,150" stroke="url(#gold-line-gradient)" strokeWidth="2" fill="none">
         <animate attributeName="d"
           values="M0,150 Q300,100 600,150 T1200,150 T1800,150;M0,150 Q300,200 600,150 T1200,150 T1800,150;M0,150 Q300,100 600,150 T1200,150 T1800,150"
           dur="8s" repeatCount="indefinite" />
       </path>
-      <path d="M0,300 Q400,250 800,300 T1600,300" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none" opacity="0.4">
+      <path d="M0,300 Q400,250 800,300 T1600,300" stroke="url(#gold-line-gradient-2)" strokeWidth="1.5" fill="none" opacity="0.6">
         <animate attributeName="d"
           values="M0,300 Q400,250 800,300 T1600,300;M0,300 Q400,350 800,300 T1600,300;M0,300 Q400,250 800,300 T1600,300"
           dur="10s" repeatCount="indefinite" />
       </path>
-      <path d="M0,450 Q250,400 500,450 T1000,450 T1500,450" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none" opacity="0.2">
+      <path d="M0,450 Q250,400 500,450 T1000,450 T1500,450" stroke="url(#gold-line-gradient)" strokeWidth="1" fill="none" opacity="0.4">
         <animate attributeName="d"
           values="M0,450 Q250,400 500,450 T1000,450 T1500,450;M0,450 Q250,500 500,450 T1000,450 T1500,450;M0,450 Q250,400 500,450 T1000,450 T1500,450"
           dur="7s" repeatCount="indefinite" />
@@ -227,10 +232,10 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
           {/* Diamond pattern overlay - distinct from .xyz hex pattern */}
           <div className="absolute inset-0 diamond-pattern opacity-50" />
 
-          {/* Subtle orbs - more muted colors */}
-          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#8B7355] orb-gold" />
-          <div className="absolute bottom-0 right-1/4 w-[450px] h-[450px] bg-[#6B5B4F] orb-gold" style={{ animationDelay: '2s' }} />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-[#8B7355]/10 to-[#A69080]/8 rounded-full blur-[120px]" />
+          {/* BOLD vibrant orbs */}
+          <div className="absolute top-0 left-1/4 w-[700px] h-[700px] bg-[#FFD700] orb-gold" />
+          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#F0B90B] orb-gold" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-gradient-to-r from-[#FFD700]/15 to-[#FFA500]/10 rounded-full blur-[120px]" />
         </div>
 
         {/* Floating elements */}
@@ -242,102 +247,103 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
           className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40 z-10"
         >
           <div className="text-center max-w-5xl mx-auto">
-            {/* Badge */}
+            {/* Badge - BOLD */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-3 px-6 py-3 rounded-full glass-gold mb-10"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full glass-gold mb-12 border-2 border-[#FFD700]/30"
             >
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping-gold absolute inline-flex h-full w-full rounded-full bg-[#C9A962] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-[#C9A962]"></span>
+              <span className="relative flex h-4 w-4">
+                <span className="animate-ping-gold absolute inline-flex h-full w-full rounded-full bg-[#FFD700] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-4 w-4 bg-[#FFD700]"></span>
               </span>
-              <span className="text-sm font-semibold text-white">
+              <span className="text-base font-bold text-white tracking-wide">
                 <span className="gradient-text-gold">AI-First</span> Financial Technology
               </span>
-              <Sparkles className="w-4 h-4 text-[#C9A962]" />
+              <Sparkles className="w-5 h-5 text-[#FFD700]" />
             </motion.div>
 
-            {/* Headline - Smaller, on one line */}
+            {/* Headline - BOLD with visible ® */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 leading-[1.1] tracking-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-10 leading-[1.1] tracking-tight"
             >
               <span className="relative inline-block">
-                IoMarkets<sup className="text-[10px] sm:text-xs absolute -top-1 -right-3">®</sup>
+                IoMarkets
+                <span className="text-[#FFD700] text-xl sm:text-2xl lg:text-3xl font-bold align-super ml-1">®</span>
               </span>
               {' '}
-              <span className="text-gray-300">Organization</span>
+              <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Organization</span>
             </motion.h1>
 
-            {/* Tagline with animated underline like .xyz "Create" */}
+            {/* Tagline with BOLD animated underline and visible TM */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mb-8"
+              className="mb-10"
             >
               <span className="relative inline-block">
-                <span className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-300 bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
+                <span className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-[#FFD700] via-[#FFF8DC] to-[#FFD700] bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
                   Where Ambition meets Innovation and Strategy meets Execution
                 </span>
-                <sup className="text-[10px] sm:text-xs text-amber-300/70 ml-1">™</sup>
+                <span className="text-[#FFD700] text-base sm:text-lg lg:text-xl font-bold align-super ml-2">™</span>
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: 0.5 }}
-                  className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#C9A962] to-[#E8D5A3] rounded-full origin-left"
+                  className="absolute -bottom-3 left-0 w-full h-1.5 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FFD700] rounded-full origin-left shadow-lg shadow-[#FFD700]/50"
                 />
               </span>
             </motion.div>
 
-            {/* Subtitle */}
+            {/* Subtitle - BOLD accent colors */}
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-lg sm:text-xl text-gray-400 mb-14 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed"
             >
-              The most holistic AI-first financial technology ecosystem powering the future of financial services by combining the latest innovation in <span className="text-[#C9A962] font-medium">Artificial Intelligence</span>, <span className="text-[#E8D5A3] font-medium">Data Analytics</span>, and <span className="text-[#B8954F] font-medium">Digital Assets</span>.
+              The most holistic AI-first financial technology ecosystem powering the future of financial services by combining the latest innovation in <span className="text-[#FFD700] font-semibold">Artificial Intelligence</span>, <span className="text-[#FFA500] font-semibold">Data Analytics</span>, and <span className="text-[#F0B90B] font-semibold">Digital Assets</span>.
             </motion.p>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons - BOLD */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-5"
+              className="flex flex-col sm:flex-row items-center justify-center gap-6"
             >
-              <button className="group relative w-full sm:w-auto px-10 py-5 rounded-2xl bg-gradient-to-r from-[#C9A962] to-[#B8954F] text-navy-900 font-bold text-lg overflow-hidden shadow-lg shadow-[#C9A962]/25 hover:shadow-[#C9A962]/40 transition-all duration-300 hover:scale-105">
+              <button className="group relative w-full sm:w-auto px-12 py-6 rounded-2xl bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-navy-900 font-black text-xl overflow-hidden shadow-2xl shadow-[#FFD700]/40 hover:shadow-[#FFD700]/60 transition-all duration-300 hover:scale-105">
                 <span className="relative z-10 flex items-center justify-center gap-3">
                   Explore Ecosystem
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#E8D5A3] to-[#C9A962] opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#FFF8DC] to-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity" />
               </button>
-              <button className="group w-full sm:w-auto px-10 py-5 rounded-2xl glass text-white font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3 pulse-gold">
+              <button className="group w-full sm:w-auto px-12 py-6 rounded-2xl border-2 border-[#FFD700]/50 bg-[#FFD700]/10 text-white font-bold text-xl hover:bg-[#FFD700]/20 hover:border-[#FFD700] transition-all flex items-center justify-center gap-3">
                 Partner With Us
               </button>
             </motion.div>
           </div>
         </motion.div>
 
-        {/* Scroll indicator */}
+        {/* Scroll indicator - BOLD */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-10"
         >
-          <span className="text-sm text-gray-500">Scroll to explore</span>
-          <div className="w-6 h-10 rounded-full border-2 border-[#C9A962]/50 flex justify-center pt-2">
+          <span className="text-sm font-medium text-gray-400">Scroll to explore</span>
+          <div className="w-7 h-12 rounded-full border-2 border-[#FFD700]/60 flex justify-center pt-2 shadow-lg shadow-[#FFD700]/20">
             <motion.div
-              animate={{ y: [0, 8, 0] }}
+              animate={{ y: [0, 10, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-1.5 h-1.5 rounded-full bg-[#C9A962]"
+              className="w-2 h-2 rounded-full bg-[#FFD700]"
             />
           </div>
         </motion.div>

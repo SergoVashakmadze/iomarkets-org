@@ -16,7 +16,9 @@
       "Bash(npm install:*)",
       "Bash(git fetch:*)",
       "Bash(git rebase:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(curl:*)"
     ]
   }
 }
