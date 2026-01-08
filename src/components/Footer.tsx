@@ -100,7 +100,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="pt-8 border-t border-slate-200">
           <p className="text-center text-base font-semibold text-gray-700 mb-2">
-            Built with love by{' '}
+            Built with ❤️ by{' '}
             <a
               href="https://www.linkedin.com/in/sergovashakmadze/"
               target="_blank"
