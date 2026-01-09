@@ -143,10 +143,10 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
     },
     {
       icon: TrendingUp,
-      name: <>IoMarkets<sup className="text-xs">®</sup>.com</>,
-      description: 'Advanced Cryptocurrency Trading Exchange',
+      name: <>IoMarkets<sup className="text-xs">®</sup>.pro</>,
+      description: 'Universal Exchange - Pro Trading Suite',
       color: 'bg-blue-500',
-      domain: 'iomarkets.com',
+      domain: 'iomarkets.pro',
       isExternal: false
     },
     {
