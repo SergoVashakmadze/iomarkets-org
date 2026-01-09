@@ -1,22 +1,22 @@
-﻿import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 
 // Ecosystem domains - must be identical across all IoMarkets domains
 const ecosystemDomains = [
-  { name: 'IoMarkets.org', subtitle: 'Organization', url: 'https://iomarkets.org', icon: 'ðŸ›ï¸', current: true },
-  { name: 'IoMarkets.io', subtitle: 'AI-Powered Web3 Capital Markets', url: 'https://iomarkets.io', icon: 'ðŸ“ˆ' },
-  { name: 'IoMarkets.money', subtitle: 'Digital Money, Stablecoins & Payments', url: 'https://iomarkets.money', icon: 'ðŸ’°' },
-  { name: 'IoMarkets.xyz', subtitle: 'Digital Collectibles & NFT Platform', url: 'https://iomarkets.xyz', icon: 'ðŸŽ¨' },
-  { name: 'IoMarkets.pro', subtitle: 'Universal Exchange - Pro Trading Suite', url: 'https://iomarkets.pro', icon: 'ðŸ’¹' },
-  { name: 'IoMarkets.ai', subtitle: 'AI-Powered Markets Intelligence', url: 'https://iomarkets.ai', icon: 'ðŸ¤–' },
-  { name: 'IoMarkets.co', subtitle: 'Corporate Finance & Investor Relations', url: 'https://iomarkets.co', icon: 'ðŸ¢' },
-  { name: 'IoMarkets.vc', subtitle: 'Venture Capital Investment Fund', url: 'https://iomarkets.vc', icon: 'ðŸš€' },
-  { name: 'IoMarkets.fund', subtitle: 'Asset Management', url: 'https://iomarkets.fund', icon: 'ðŸ“Š' },
-  { name: 'IoMarkets.tv', subtitle: 'Global Financial News Television', url: 'https://iomarkets.tv', icon: 'ðŸ“º' },
-  { name: 'IoMarkets.news', subtitle: 'Global Online Financial News', url: 'https://iomarkets.news', icon: 'ðŸ“°' },
-  { name: 'IoMarkets.tech', subtitle: 'Financial Technology Solutions', url: 'https://iomarkets.tech', icon: 'âš™ï¸' },
-  { name: 'DipBuyer AI', subtitle: 'AI Agent for Value Investing', url: 'https://dipbuyer.ai', icon: 'ðŸŽ¯' },
+  { name: 'IoMarkets.org', subtitle: 'Organization', url: 'https://iomarkets.org', icon: '🏛️', current: true },
+  { name: 'IoMarkets.io', subtitle: 'AI-Powered Web3 Capital Markets', url: 'https://iomarkets.io', icon: '📈' },
+  { name: 'IoMarkets.money', subtitle: 'Digital Money, Stablecoins & Payments', url: 'https://iomarkets.money', icon: '💰' },
+  { name: 'IoMarkets.xyz', subtitle: 'Digital Collectibles & NFT Platform', url: 'https://iomarkets.xyz', icon: '🎨' },
+  { name: 'IoMarkets.pro', subtitle: 'Universal Exchange - Pro Trading Suite', url: 'https://iomarkets.pro', icon: '💹' },
+  { name: 'IoMarkets.ai', subtitle: 'AI-Powered Markets Intelligence', url: 'https://iomarkets.ai', icon: '🤖' },
+  { name: 'IoMarkets.co', subtitle: 'Corporate Finance & Investor Relations', url: 'https://iomarkets.co', icon: '🏢' },
+  { name: 'IoMarkets.vc', subtitle: 'Venture Capital Investment Fund', url: 'https://iomarkets.vc', icon: '🚀' },
+  { name: 'IoMarkets.fund', subtitle: 'Asset Management', url: 'https://iomarkets.fund', icon: '📊' },
+  { name: 'IoMarkets.tv', subtitle: 'Global Financial News Television', url: 'https://iomarkets.tv', icon: '📺' },
+  { name: 'IoMarkets.news', subtitle: 'Global Online Financial News', url: 'https://iomarkets.news', icon: '📰' },
+  { name: 'IoMarkets.tech', subtitle: 'Financial Technology Solutions', url: 'https://iomarkets.tech', icon: '⚙️' },
+  { name: 'DipBuyer AI', subtitle: 'AI Agent for Value Investing', url: 'https://dipbuyer.ai', icon: '🎯' },
 ];
 
 export function Header() {
@@ -55,7 +55,7 @@ export function Header() {
               <div className="flex flex-col">
                 <div className="flex items-center">
                   <span className="text-xl font-bold text-white">IoMarkets</span>
-                  <span className="text-xl font-bold text-amber-500">Â®</span>
+                  <span className="text-xl font-bold text-amber-500">®</span>
                 </div>
                 <span className="text-[10px] text-cyan-400 -mt-0.5 uppercase tracking-wider font-bold">ORGANIZATION</span>
               </div>
