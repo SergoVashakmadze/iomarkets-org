@@ -320,16 +320,6 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
               </div>
             </motion.div>
 
-            {/* Subtitle - Institutional accent colors */}
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed"
-            >
-              The most holistic AI-first financial technology ecosystem powering the future of financial services by combining the latest innovation in <span className="text-[#DAA520] font-semibold">Artificial Intelligence</span>, <span className="text-[#CFB53B] font-semibold">Data Analytics</span>, and <span className="text-[#B8860B] font-semibold">Digital Assets</span>.
-            </motion.p>
-
             {/* CTA Buttons - Institutional */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -370,6 +360,21 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
 
         {/* Bottom gradient fade to white */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-10"></div>
+      </section>
+
+      {/* Mission Statement */}
+      <section className="py-16 bg-white relative z-10">
+        <div className="container mx-auto px-6">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-xl lg:text-2xl text-gray-700 max-w-5xl mx-auto text-center leading-relaxed"
+          >
+            The most holistic AI-first financial technology ecosystem powering the future of financial services by combining the latest innovation in <span className="text-[#DAA520] font-semibold">Artificial Intelligence</span>, <span className="text-[#CFB53B] font-semibold">Data Analytics</span>, and <span className="text-[#B8860B] font-semibold">Digital Assets</span>.
+          </motion.p>
+        </div>
       </section>
 
       {/* Ecosystem Overview */}
