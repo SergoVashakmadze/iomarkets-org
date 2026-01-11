@@ -334,9 +334,9 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#CFB53B] to-[#DAA520] opacity-0 group-hover:opacity-100 transition-opacity" />
               </button>
-              <button className="group w-full sm:w-auto px-12 py-6 rounded-2xl border-2 border-[#B8860B]/50 bg-[#B8860B]/10 text-white font-bold text-xl hover:bg-[#B8860B]/20 hover:border-[#DAA520] transition-all flex items-center justify-center gap-3">
+              <a href="mailto:info@iomarkets.org" className="group w-full sm:w-auto px-12 py-6 rounded-2xl border-2 border-[#B8860B]/50 bg-[#B8860B]/10 text-white font-bold text-xl hover:bg-[#B8860B]/20 hover:border-[#DAA520] transition-all flex items-center justify-center gap-3">
                 Partner With Us
-              </button>
+              </a>
             </motion.div>
           </div>
         </motion.div>
@@ -653,9 +653,9 @@ const IoMarketsOrg: React.FC<IoMarketsOrgProps> = ({ onDomainChange: _onDomainCh
               Partner with us to build the future of financial services and capital markets.
             </p>
             <div className="flex justify-center">
-              <button className="bg-gold-500 text-navy-900 px-8 py-3 rounded-lg font-medium hover:bg-gold-400 transition-colors">
+              <a href="mailto:info@iomarkets.org" className="bg-gold-500 text-navy-900 px-8 py-3 rounded-lg font-medium hover:bg-gold-400 transition-colors">
                 Partnership Opportunities
-              </button>
+              </a>
             </div>
           </div>
         </div>
