@@ -37,7 +37,7 @@ export function Footer() {
 
           {/* IoMarkets LLC */}
           <div>
-            <h4 className="text-sm font-semibold text-cyan-600 mb-4 tracking-wide">IoMarkets<sup className="text-xs">®</sup> LLC</h4>
+            <h4 className="text-sm font-bold text-slate-800 mb-4 tracking-wide">IoMarkets<sup className="text-xs">®</sup> LLC</h4>
             <p className="text-gray-600 text-sm font-light leading-relaxed">
               30 N Gould St Ste R,<br />
               Sheridan, Sheridan County,<br />
@@ -48,7 +48,7 @@ export function Footer() {
 
           {/* IoMarkets UG */}
           <div>
-            <h4 className="text-sm font-semibold text-cyan-600 mb-4 tracking-wide">IoMarkets<sup className="text-xs">®</sup> UG</h4>
+            <h4 className="text-sm font-bold text-slate-800 mb-4 tracking-wide">IoMarkets<sup className="text-xs">®</sup> UG</h4>
             <p className="text-gray-600 text-sm font-light leading-relaxed">
               Weningstrasse 8,<br />
               94405 Landau,<br />
@@ -58,7 +58,7 @@ export function Footer() {
 
           {/* IoMarkets Ltd */}
           <div>
-            <h4 className="text-sm font-semibold text-blue-600 mb-4 tracking-wide">IoMarkets<sup className="text-xs">®</sup> Ltd</h4>
+            <h4 className="text-sm font-bold text-slate-800 mb-4 tracking-wide">IoMarkets<sup className="text-xs">®</sup> Ltd</h4>
             <p className="text-gray-600 text-sm font-light leading-relaxed">
               20-22 Wenlock Road<br />
               London, N1 7GU<br />
@@ -68,7 +68,7 @@ export function Footer() {
 
           {/* IoMarkets WLL */}
           <div>
-            <h4 className="text-sm font-semibold text-blue-600 mb-4 tracking-wide">IoMarkets<sup className="text-xs">®</sup> WLL</h4>
+            <h4 className="text-sm font-bold text-slate-800 mb-4 tracking-wide">IoMarkets<sup className="text-xs">®</sup> WLL</h4>
             <p className="text-gray-600 text-sm font-light leading-relaxed">
               Office No. 1002, Building 1260, Road 2421, Block 324, Juffair<br />
               Manama / Al Fateh<br />
@@ -78,7 +78,7 @@ export function Footer() {
 
           {/* Follow Us */}
           <div>
-            <h4 className="text-sm font-semibold text-cyan-600 mb-4 tracking-wide">Follow Us</h4>
+            <h4 className="text-sm font-bold text-slate-800 mb-4 tracking-wide">Follow Us</h4>
             <ul className="space-y-3 text-sm">
               {socialLinks.map((social) => (
                 <li key={social.name}>
