@@ -25,7 +25,7 @@ const About: React.FC = () => {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6">
-              About <span className="text-amber-500">IoMarkets®</span>
+              About <span className="text-amber-500">IoMarkets<sup className="text-2xl">®</sup></span>
             </h1>
             <p className="text-xl text-gray-300">
               The Internet of Markets
