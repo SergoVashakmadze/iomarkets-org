@@ -52,7 +52,7 @@ const About: React.FC = () => {
             </div>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p>
-                <strong>IoMarkets</strong> - the <strong>Internet of Markets</strong> - was coined by the ecosystem's founder{' '}
+                <strong>IoMarkets®</strong> - the <strong>Internet of Markets</strong> - was coined by the ecosystem's founder{' '}
                 <a href="https://www.linkedin.com/in/sergovashakmadze/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-semibold">
                   Sergo Vashakmadze
                 </a>{' '}
