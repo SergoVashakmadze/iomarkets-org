@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { ChevronDown } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { ChevronDown, Info } from 'lucide-react';
 
 // Ecosystem domains - must be identical across all IoMarkets domains
 const ecosystemDomains = [
@@ -23,6 +23,8 @@ export function Header() {
   const [ecosystemOpen, setEcosystemOpen] = useState(false);
   const ecosystemDesktopRef = useRef<HTMLDivElement>(null);
   const ecosystemMobileRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
+  const isAboutPage = location.pathname === '/about';
 
   // Close dropdowns when clicking outside
   useEffect(() => {
@@ -63,6 +65,19 @@ export function Header() {
 
             {/* Desktop Right Section */}
             <div className="hidden lg:flex items-center gap-4">
+              {/* About Button */}
+              <Link
+                to="/about"
+                className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-medium transition-colors ${
+                  isAboutPage
+                    ? 'bg-amber-500 text-slate-900'
+                    : 'bg-slate-800 border border-slate-700 text-white hover:bg-slate-700'
+                }`}
+              >
+                <Info className="w-4 h-4" />
+                About
+              </Link>
+
               {/* Ecosystem Button */}
               <div ref={ecosystemDesktopRef} className="relative">
                 <button
@@ -114,7 +129,20 @@ export function Header() {
             </div>
 
             {/* Mobile Right Section */}
-            <div className="lg:hidden flex items-center">
+            <div className="lg:hidden flex items-center gap-2">
+              {/* Mobile About Button - Left of Ecosystem */}
+              <Link
+                to="/about"
+                className={`flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+                  isAboutPage
+                    ? 'bg-amber-500 text-slate-900'
+                    : 'bg-slate-800 border border-slate-700 text-white'
+                }`}
+              >
+                <Info className="w-3 h-3" />
+                About
+              </Link>
+
               {/* Mobile Ecosystem Button */}
               <div ref={ecosystemMobileRef} className="relative">
                 <button

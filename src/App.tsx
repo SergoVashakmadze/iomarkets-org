@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home'
+import About from './About'
 import { TickerTape } from './components/TickerTape'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
@@ -15,6 +16,7 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />
