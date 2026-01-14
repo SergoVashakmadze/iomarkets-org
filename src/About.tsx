@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { Globe, Cpu, Brain, Zap, TrendingUp, Coins, Star, Briefcase, Wallet, Tv, Newspaper, Monitor, Sparkles, Wifi, ArrowRight } from 'lucide-react';
+import { Globe, Cpu, Brain, Zap, TrendingUp, Coins, Star, Briefcase, Wallet, Tv, Newspaper, Monitor, Sparkles, Wifi, ArrowRight, BookOpen, Factory } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -59,7 +59,141 @@ const About: React.FC = () => {
                 to capture a fundamental truth of our era: the internet has become the foundational infrastructure transforming every market, every transaction, and every aspect of how value is created, exchanged, and preserved globally.
               </p>
               <p>
-                Just as electricity powered the Industrial Revolution and enabled everything from manufacturing to telecommunications, the internet now serves as the invisible backbone of the modern economy. Every financial transaction, every market movement, every investment decision is now mediated, enhanced, or executed through internet-enabled technologies.
+                The internet revolution stands as the latest in a series of transformative forces that have fundamentally reshaped human civilization. To understand its significance, we must look back at the great revolutions that preceded it.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* The Gutenberg Revolution */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-16"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <BookOpen className="w-8 h-8 text-amber-700" />
+              <h2 className="text-3xl font-bold text-slate-900">The Gutenberg Revolution: The First Information Revolution</h2>
+            </div>
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+              <p>
+                The Gutenberg printing press, invented in the mid-15th century, created an "information revolution" that permanently altered the course of history, transforming knowledge from a scarce, elite-controlled commodity into a widely accessible resource that empowered individuals and transformed societies.
+              </p>
+              <p>
+                <strong>Democratization of Knowledge:</strong> Before the press, books were painstakingly hand-copied by scribes (mostly monks or clergy) and were rare, expensive, and primarily accessible only to the elite and religious institutions. Gutenberg's invention enabled mass production, making books affordable and widely available to a much broader public for the first time.
+              </p>
+              <p>
+                <strong>Increased Literacy and Education:</strong> The widespread availability of texts in common vernacular languages, rather than just Latin, incentivized people from various social classes to learn to read and write. This led to a significant increase in literacy rates and laid the foundation for modern public education systems.
+              </p>
+              <p>
+                <strong>Rapid Dissemination of Ideas:</strong> The press allowed for the swift and efficient spread of new ideas across Europe and beyond. This acceleration of information exchange was crucial for:
+              </p>
+              <div className="bg-amber-50 border-l-4 border-amber-600 p-4 rounded-r-lg my-6">
+                <ul className="space-y-2 text-gray-700 list-none pl-0 m-0">
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-700 font-bold">•</span>
+                    <span><strong>The Renaissance:</strong> Fostering intellectual curiosity and distributing classical and humanist texts</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-700 font-bold">•</span>
+                    <span><strong>The Protestant Reformation:</strong> Enabling reformers like Martin Luther to circulate their critiques (such as the Ninety-five Theses) in pamphlets and books, challenging the Catholic Church's authority</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-700 font-bold">•</span>
+                    <span><strong>The Scientific Revolution:</strong> Allowing scientists like Copernicus and Galileo to share their findings and data quickly and accurately, spurring debate and collaborative discovery</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-700 font-bold">•</span>
+                    <span><strong>The Enlightenment:</strong> Providing a platform for philosophical and political writings that promoted reason and critical thinking, shaping public opinion and political revolutions</span>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                <strong>Standardization and Accuracy:</strong> Hand-copying was prone to human error. The printing press produced uniform, identical copies, meaning scholars and scientists could reference and build upon a shared, reliable body of knowledge with greater confidence in its accuracy.
+              </p>
+              <p>
+                <strong>A Fundamental Shift in Human Thought:</strong> The ability to access diverse perspectives in print encouraged critical thinking and public debate, fundamentally changing how people learned, thought, and challenged existing norms and authorities. It shifted the reliance on human memory for knowledge transmission to a more permanent, accessible format.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* The Industrial Revolutions */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-16"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <Factory className="w-8 h-8 text-slate-700" />
+              <h2 className="text-3xl font-bold text-slate-900">The Industrial Revolutions: Transforming the Physical World</h2>
+            </div>
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+              <p>
+                The Industrial Revolutions (First: ~1760-1840, Second: ~1870-1914, Third: ~1970s-2000s, Fourth: Present) transformed societies from agrarian to mechanized, leading to massive urbanization, factory systems, mass production, improved living standards, new social classes, global trade, and profound environmental impacts.
+              </p>
+              <div className="grid gap-4 my-6">
+                <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                  <p className="m-0"><strong>The First Industrial Revolution (~1760-1840):</strong> Powered by water and steam, this era saw mechanized textiles (the Spinning Jenny), iron production, the steam engine, canals, and early railways. It marked the shift from hand production to machine manufacturing, concentrated primarily in Britain before spreading globally.</p>
+                </div>
+                <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                  <p className="m-0"><strong>The Second Industrial Revolution (~1870-1914):</strong> Electricity, steel, and chemicals transformed industry. The internal combustion engine, telegraph, telephone, and mass production techniques emerged. This era saw the rise of the corporation and the beginning of consumer culture.</p>
+                </div>
+                <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                  <p className="m-0"><strong>The Third Industrial Revolution (~1970s-2000s):</strong> Electronics, information technology, computing, nuclear energy, and automation defined this period. The personal computer, the early internet, and digital communication laid the groundwork for the connected world we inhabit today.</p>
+                </div>
+                <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                  <p className="m-0"><strong>The Fourth Industrial Revolution (Present):</strong> Cyber-physical systems, artificial intelligence, the Internet of Things, and renewable energy characterize our current era. The boundaries between physical, digital, and biological spheres blur as technologies converge.</p>
+                </div>
+              </div>
+              <p><strong>Major Impacts Across All Industrial Revolutions:</strong></p>
+              <div className="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-lg my-6">
+                <ul className="space-y-2 text-gray-700 list-none pl-0 m-0">
+                  <li className="flex items-start gap-2">
+                    <span className="text-slate-700 font-bold">•</span>
+                    <span><strong>Economic:</strong> Shift to manufacturing, rise of capitalism, mass production, increased GDP, global trade, and consumerism</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-slate-700 font-bold">•</span>
+                    <span><strong>Social:</strong> Massive urban migration, rise of cities, emergence of middle and working classes, changes in family structure, and labour movements</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-slate-700 font-bold">•</span>
+                    <span><strong>Work:</strong> Factory systems, evolving labor conditions, and eventual higher wages and protections</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-slate-700 font-bold">•</span>
+                    <span><strong>Technological:</strong> Unprecedented innovation in transport, communication, science, and medicine</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-slate-700 font-bold">•</span>
+                    <span><strong>Living Standards:</strong> Initially harsh conditions, but eventually higher quality of life, better diets, sanitation, and access to goods</span>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                The Industrial Revolutions spurred immense progress but also created significant social and environmental challenges, leading to ongoing debates about equitable growth, sustainability, and the future of work.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* The Internet Revolution */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-16"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <Globe className="w-8 h-8 text-blue-600" />
+              <h2 className="text-3xl font-bold text-slate-900">The Internet Revolution: The Greatest Transformation Yet</h2>
+            </div>
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+              <p>
+                Just as the printing press democratized knowledge and the Industrial Revolutions mechanized production, the internet now serves as the invisible backbone of the modern economy - but its scope exceeds both. Every financial transaction, every market movement, every investment decision is now mediated, enhanced, or executed through internet-enabled technologies.
               </p>
             </div>
           </motion.div>
@@ -127,7 +261,7 @@ const About: React.FC = () => {
             </div>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                In January 2018, speaking at the World Economic Forum in Davos about the "fourth industrial revolution," Canadian Prime Minister Justin Trudeau delivered what would become a prophetic observation:
+                In January 2018, speaking at the World Economic Forum in Davos about the "fourth industrial revolution," Canadian Prime Minister <strong>Justin Trudeau</strong> delivered what would become a prophetic observation:
               </p>
               <blockquote className="border-l-4 border-amber-500 pl-6 py-2 my-6 bg-amber-50 rounded-r-lg">
                 <p className="text-xl italic text-slate-800 font-medium">
@@ -333,7 +467,7 @@ const About: React.FC = () => {
                 The breadth of the IoMarkets ecosystem - spanning capital markets, digital money, asset management, venture capital, corporate finance, media, creative assets, and AI intelligence - reflects a deliberately comprehensive and holistic approach. Building across so many verticals simultaneously is ambitious by design.
               </p>
               <p>
-                As the saying goes, often attributed to visionaries like Richard Branson and Ellen Johnson Sirleaf:
+                As the saying goes, often attributed to visionaries like <strong>Richard Branson</strong> and <strong>Ellen Johnson Sirleaf</strong>:
               </p>
               <blockquote className="border-l-4 border-cyan-500 pl-6 py-2 my-6 bg-cyan-50 rounded-r-lg">
                 <p className="text-xl italic text-slate-800 font-medium">

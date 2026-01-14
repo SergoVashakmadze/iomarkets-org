@@ -69,7 +69,7 @@ The "Io" prefix in both cases represents the same transformative force: the inte
 
 ## The Pace of Change
 
-In January 2018, speaking at the World Economic Forum in Davos about the "fourth industrial revolution," Canadian Prime Minister Justin Trudeau delivered what would become a prophetic observation:
+In January 2018, speaking at the World Economic Forum in Davos about the "fourth industrial revolution," Canadian Prime Minister **Justin Trudeau** delivered what would become a prophetic observation:
 
 > *"The pace of change has never been this fast, and yet it will never be this slow again."*
 
@@ -127,7 +127,7 @@ The Internet of Markets is not just our name - it's our thesis. The internet has
 
 The breadth of the IoMarkets ecosystem - spanning capital markets, digital money, asset management, venture capital, corporate finance, media, creative assets, and AI intelligence - reflects a deliberately comprehensive and holistic approach. Building across so many verticals simultaneously is ambitious by design.
 
-As the saying goes, often attributed to visionaries like Richard Branson and Ellen Johnson Sirleaf:
+As the saying goes, often attributed to visionaries like **Richard Branson** and **Ellen Johnson Sirleaf**:
 
 > *"If your dreams don't scare you, they are too small."*
 
