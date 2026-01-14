@@ -327,7 +327,7 @@ const About: React.FC = () => {
                   <div className="flex items-center gap-2 mb-2">
                     <TrendingUp className="w-5 h-5 text-blue-600" />
                     <strong className="text-slate-900">Capital Markets</strong>
-                    <span className="text-sm text-gray-500">(IoMarkets.io, IoMarkets.pro)</span>
+                    <span className="text-sm">(<a href="https://iomarkets.io" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.io</a>, <a href="https://iomarkets.pro" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.pro</a>)</span>
                   </div>
                   <p className="text-sm m-0">Have evolved from physical trading floors to 24/7 global digital networks. Tokenization converts traditional securities into digital assets enabling fractional ownership and instant settlement. AI-powered analytics and algorithmic execution, once exclusive to institutional players, are now accessible to all.</p>
                 </div>
@@ -336,7 +336,7 @@ const About: React.FC = () => {
                   <div className="flex items-center gap-2 mb-2">
                     <Coins className="w-5 h-5 text-emerald-600" />
                     <strong className="text-slate-900">Money & Payments</strong>
-                    <span className="text-sm text-gray-500">(IoMarkets.money)</span>
+                    <span className="text-sm">(<a href="https://iomarkets.money" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.money</a>)</span>
                   </div>
                   <p className="text-sm m-0">Are being fundamentally reimagined. Stablecoins combine cryptocurrency efficiency with price stability. Programmable money executes automatically based on conditions. Cross-border transfers that once took days now happen in seconds.</p>
                 </div>
@@ -345,7 +345,7 @@ const About: React.FC = () => {
                   <div className="flex items-center gap-2 mb-2">
                     <Wallet className="w-5 h-5 text-indigo-600" />
                     <strong className="text-slate-900">Asset Management & Investment</strong>
-                    <span className="text-sm text-gray-500">(IoMarkets.fund, IoMarkets.vc, DipBuyer.ai)</span>
+                    <span className="text-sm">(<a href="https://iomarkets.fund" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.fund</a>, <a href="https://iomarkets.vc" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.vc</a>, <a href="https://dipbuyer.ai" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">DipBuyer.ai</a>)</span>
                   </div>
                   <p className="text-sm m-0">Has evolved from exclusive clubs to globally accessible platforms. AI-driven strategies adapt continuously to market conditions. Autonomous agents like DipBuyer.ai bring institutional-quality value investing analysis to everyone.</p>
                 </div>
@@ -354,7 +354,7 @@ const About: React.FC = () => {
                   <div className="flex items-center gap-2 mb-2">
                     <Briefcase className="w-5 h-5 text-green-600" />
                     <strong className="text-slate-900">Corporate Finance</strong>
-                    <span className="text-sm text-gray-500">(IoMarkets.co)</span>
+                    <span className="text-sm">(<a href="https://iomarkets.co" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.co</a>)</span>
                   </div>
                   <p className="text-sm m-0">Now features real-time investor relations, streamlined capital raising, and AI-enhanced due diligence - making corporate finance faster, more transparent, and globally accessible.</p>
                 </div>
@@ -364,7 +364,7 @@ const About: React.FC = () => {
                     <Tv className="w-5 h-5 text-red-600" />
                     <Newspaper className="w-5 h-5 text-orange-600" />
                     <strong className="text-slate-900">Financial News & Media</strong>
-                    <span className="text-sm text-gray-500">(IoMarkets.tv, IoMarkets.news)</span>
+                    <span className="text-sm">(<a href="https://iomarkets.tv" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.tv</a>, <a href="https://iomarkets.news" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.news</a>)</span>
                   </div>
                   <p className="text-sm m-0">Have transformed how information flows. AI generates real-time market reports. Personalized feeds deliver relevant content instantly. The information asymmetry that once defined professional investing has been dramatically reduced.</p>
                 </div>
@@ -373,7 +373,7 @@ const About: React.FC = () => {
                   <div className="flex items-center gap-2 mb-2">
                     <Brain className="w-5 h-5 text-purple-600" />
                     <strong className="text-slate-900">AI & Data Analytics</strong>
-                    <span className="text-sm text-gray-500">(IoMarkets.ai)</span>
+                    <span className="text-sm">(<a href="https://iomarkets.ai" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.ai</a>)</span>
                   </div>
                   <p className="text-sm m-0">Powers the intelligence layer across the entire ecosystem: machine learning processing vast datasets, natural language processing analyzing news and sentiment, alternative data integration from non-traditional sources, and autonomous research agents conducting comprehensive analysis at superhuman speed.</p>
                 </div>
@@ -395,7 +395,7 @@ const About: React.FC = () => {
             </div>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                Beyond traditional finance, internet technologies have revolutionized the creative sector (<strong>IoMarkets.xyz</strong>). NFTs and digital collectibles enable verifiable ownership of unique digital works. Artists can now monetize directly to fans without gatekeepers. Music, video, and audio content flows directly from creator to consumer. Intellectual property can be registered on immutable blockchains, with smart contracts ensuring creators receive royalties automatically and in perpetuity.
+                Beyond traditional finance, internet technologies have revolutionized the creative sector (<a href="https://iomarkets.xyz" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.xyz</a>). NFTs and digital collectibles enable verifiable ownership of unique digital works. Artists can now monetize directly to fans without gatekeepers. Music, video, and audio content flows directly from creator to consumer. Intellectual property can be registered on immutable blockchains, with smart contracts ensuring creators receive royalties automatically and in perpetuity.
               </p>
               <p>
                 This represents something profound: <strong>internet technologies have become the primary wealth creation engine globally</strong>. The largest companies by market capitalization are internet-native or internet-enabled. Digital creators, once marginalized, now build billion-dollar enterprises. The creative economy, supercharged by blockchain and AI, has become a legitimate asset class.
@@ -417,7 +417,7 @@ const About: React.FC = () => {
             </div>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                Underpinning everything is critical infrastructure (<strong>IoMarkets.tech</strong>): APIs enabling seamless integration, compliance technology automating regulatory requirements, security solutions protecting digital assets, and cloud-native architecture providing global scale and resilience.
+                Underpinning everything is critical infrastructure (<a href="https://iomarkets.tech" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.tech</a>): APIs enabling seamless integration, compliance technology automating regulatory requirements, security solutions protecting digital assets, and cloud-native architecture providing global scale and resilience.
               </p>
             </div>
           </motion.div>
@@ -439,7 +439,7 @@ const About: React.FC = () => {
                 We live in an era of unprecedented technological change. The internet continues to evolve, each iteration more transformative than the last. Financial services, capital markets, money itself - all are being fundamentally reimagined. And the pace, as Trudeau foresaw, only accelerates.
               </p>
               <p>
-                These are exciting times, full of opportunity. They are also potentially challenging times, requiring constant adaptation, vigilance, and the wisdom to harness powerful technologies responsibly.
+                These are exciting times, full of opportunity. They are also potentially challenging times - particularly for incumbents. <strong>Agile challengers and disruptors</strong>, unburdened by legacy systems and institutional inertia, can adapt and innovate at speeds that established players often cannot match. History shows that incumbents who dismiss or underestimate emerging technologies risk being left behind, while those who embrace collaboration with innovative disruptors can combine the best of both worlds: institutional strength with entrepreneurial agility.
               </p>
               <p>
                 <strong>IoMarkets is built for exactly this moment.</strong> By maintaining a "latest technology first" philosophy and building across the full spectrum of financial services - from capital markets to digital money, from venture capital to media, from creative assets to AI intelligence - we are well-equipped to navigate whatever the future brings.
