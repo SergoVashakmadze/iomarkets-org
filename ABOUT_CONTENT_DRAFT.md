@@ -6,6 +6,22 @@
 
 Just as electricity powered the Industrial Revolution and enabled everything from manufacturing to telecommunications, the internet now serves as the invisible backbone of the modern economy. Every financial transaction, every market movement, every investment decision is now mediated, enhanced, or executed through internet-enabled technologies.
 
+## From "Internet of Things" to "Internet of Markets"
+
+The term "Internet of Things" (IoT) was coined by Kevin Ashton in 1999 while working at Procter & Gamble, where he proposed using RFID tags to track items for better supply chain management. His vision connected the physical world to the internet - a world where everyday objects could be monitored and controlled through sensors. This conceptual breakthrough laid the groundwork for the interconnected devices we see today.
+
+Ashton's key contributions included:
+
+- **Coined the Term (1999):** Used "Internet of Things" in a presentation for Gillette, describing a system where the internet connects to the physical world via sensors.
+- **Pioneered RFID:** Demonstrated how items could be automatically tracked using Radio-Frequency Identification, reducing inventory costs and creating efficiencies.
+- **MIT Auto-ID Center:** Co-founded this key research hub for sensor and identification technologies.
+
+While others explored connected devices earlier, Ashton's specific phrase and vision for a sensor-driven, interconnected world cemented his role as the "Father of IoT."
+
+**The parallel to IoMarkets is intentional and profound.** Just as Ashton recognized that the internet would transform how we interact with physical objects, IoMarkets recognizes that the internet has fundamentally transformed how we interact with markets. Where the Internet of Things connects devices and sensors, the Internet of Markets connects investors, assets, capital, and financial services into a seamless, intelligent ecosystem.
+
+The "Io" prefix in both cases represents the same transformative force: the internet as the foundational infrastructure that reimagines entire industries. IoT reimagined the physical world; IoMarkets reimagines the financial world.
+
 ## The Pace of Change
 
 In January 2018, speaking at the World Economic Forum in Davos about the "fourth industrial revolution," Canadian Prime Minister Justin Trudeau delivered what would become a prophetic observation:

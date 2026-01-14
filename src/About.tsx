@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { Globe, Cpu, Brain, Zap, TrendingUp, Coins, Star, Briefcase, Wallet, Tv, Newspaper, Monitor, Sparkles } from 'lucide-react';
+import { Globe, Cpu, Brain, Zap, TrendingUp, Coins, Star, Briefcase, Wallet, Tv, Newspaper, Monitor, Sparkles, Wifi, ArrowRight } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -50,7 +50,7 @@ const About: React.FC = () => {
               <Globe className="w-8 h-8 text-blue-600" />
               <h2 className="text-3xl font-bold text-slate-900">The Internet of Markets</h2>
             </div>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
                 <strong>IoMarkets®</strong> - the <strong>Internet of Markets</strong> - was coined by the ecosystem's founder{' '}
                 <a href="https://www.linkedin.com/in/sergovashakmadze/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-semibold">
@@ -60,6 +60,55 @@ const About: React.FC = () => {
               </p>
               <p>
                 Just as electricity powered the Industrial Revolution and enabled everything from manufacturing to telecommunications, the internet now serves as the invisible backbone of the modern economy. Every financial transaction, every market movement, every investment decision is now mediated, enhanced, or executed through internet-enabled technologies.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* From Internet of Things to Internet of Markets */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-16"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <Wifi className="w-8 h-8 text-teal-600" />
+              <h2 className="text-3xl font-bold text-slate-900">From "Internet of Things" to "Internet of Markets"</h2>
+            </div>
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+              <p>
+                The term "Internet of Things" (IoT) was coined by <strong>Kevin Ashton</strong> in 1999 while working at Procter & Gamble, where he proposed using RFID tags to track items for better supply chain management. His vision connected the physical world to the internet - a world where everyday objects could be monitored and controlled through sensors. This conceptual breakthrough laid the groundwork for the interconnected devices we see today.
+              </p>
+
+              <div className="bg-teal-50 border-l-4 border-teal-500 p-4 rounded-r-lg my-6">
+                <p className="font-semibold text-slate-800 mb-3">Kevin Ashton's Key Contributions:</p>
+                <ul className="space-y-2 text-gray-700 list-none pl-0">
+                  <li className="flex items-start gap-2">
+                    <span className="text-teal-600 font-bold">•</span>
+                    <span><strong>Coined the Term (1999):</strong> Used "Internet of Things" in a presentation for Gillette, describing a system where the internet connects to the physical world via sensors.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-teal-600 font-bold">•</span>
+                    <span><strong>Pioneered RFID:</strong> Demonstrated how items could be automatically tracked using Radio-Frequency Identification, reducing inventory costs and creating efficiencies.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-teal-600 font-bold">•</span>
+                    <span><strong>MIT Auto-ID Center:</strong> Co-founded this key research hub for sensor and identification technologies.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <p>
+                While others explored connected devices earlier, Ashton's specific phrase and vision for a sensor-driven, interconnected world cemented his role as the "Father of IoT."
+              </p>
+
+              <p>
+                <strong>The parallel to IoMarkets is intentional and profound.</strong> Just as Ashton recognized that the internet would transform how we interact with physical objects, IoMarkets recognizes that the internet has fundamentally transformed how we interact with markets. Where the Internet of Things connects devices and sensors, the Internet of Markets connects investors, assets, capital, and financial services into a seamless, intelligent ecosystem.
+              </p>
+
+              <p>
+                The "Io" prefix in both cases represents the same transformative force: the internet as the foundational infrastructure that reimagines entire industries. IoT reimagined the physical world; IoMarkets reimagines the financial world.
               </p>
             </div>
           </motion.div>
@@ -76,7 +125,7 @@ const About: React.FC = () => {
               <Zap className="w-8 h-8 text-amber-500" />
               <h2 className="text-3xl font-bold text-slate-900">The Pace of Change</h2>
             </div>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
                 In January 2018, speaking at the World Economic Forum in Davos about the "fourth industrial revolution," Canadian Prime Minister Justin Trudeau delivered what would become a prophetic observation:
               </p>
@@ -103,7 +152,7 @@ const About: React.FC = () => {
               <Cpu className="w-8 h-8 text-purple-600" />
               <h2 className="text-3xl font-bold text-slate-900">The Technology Waves</h2>
             </div>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
                 The internet's transformative power has manifested through successive waves of innovation:
               </p>
@@ -134,7 +183,7 @@ const About: React.FC = () => {
               <TrendingUp className="w-8 h-8 text-green-600" />
               <h2 className="text-3xl font-bold text-slate-900">Revolutionizing Financial Services</h2>
             </div>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
                 These internet technologies are revolutionizing every aspect of financial services and capital markets:
               </p>
@@ -210,7 +259,7 @@ const About: React.FC = () => {
               <Star className="w-8 h-8 text-pink-600" />
               <h2 className="text-3xl font-bold text-slate-900">The Creative Economy</h2>
             </div>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
                 Beyond traditional finance, internet technologies have revolutionized the creative sector (<strong>IoMarkets.xyz</strong>). NFTs and digital collectibles enable verifiable ownership of unique digital works. Artists can now monetize directly to fans without gatekeepers. Music, video, and audio content flows directly from creator to consumer. Intellectual property can be registered on immutable blockchains, with smart contracts ensuring creators receive royalties automatically and in perpetuity.
               </p>
@@ -232,7 +281,7 @@ const About: React.FC = () => {
               <Monitor className="w-8 h-8 text-slate-600" />
               <h2 className="text-3xl font-bold text-slate-900">The Technology Foundation</h2>
             </div>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
                 Underpinning everything is critical infrastructure (<strong>IoMarkets.tech</strong>): APIs enabling seamless integration, compliance technology automating regulatory requirements, security solutions protecting digital assets, and cloud-native architecture providing global scale and resilience.
               </p>
@@ -251,7 +300,7 @@ const About: React.FC = () => {
               <Sparkles className="w-8 h-8 text-amber-500" />
               <h2 className="text-3xl font-bold text-slate-900">Navigating Exciting & Challenging Times</h2>
             </div>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
                 We live in an era of unprecedented technological change. The internet continues to evolve, each iteration more transformative than the last. Financial services, capital markets, money itself - all are being fundamentally reimagined. And the pace, as Trudeau foresaw, only accelerates.
               </p>
@@ -279,7 +328,7 @@ const About: React.FC = () => {
               <Zap className="w-8 h-8 text-cyan-500" />
               <h2 className="text-3xl font-bold text-slate-900">A Comprehensive Vision</h2>
             </div>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
                 The breadth of the IoMarkets ecosystem - spanning capital markets, digital money, asset management, venture capital, corporate finance, media, creative assets, and AI intelligence - reflects a deliberately comprehensive and holistic approach. Building across so many verticals simultaneously is ambitious by design.
               </p>
@@ -308,6 +357,104 @@ const About: React.FC = () => {
         <p className="text-xl text-amber-500 font-semibold italic">
           IoMarkets - Where Ambition meets Innovation & Strategy meets Execution
         </p>
+      </section>
+
+      {/* Featured Insights */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-4 inline-block">
+              Industry Insights
+            </span>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Featured Reading</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Explore thought leadership on the intersection of AI, data analytics, blockchain, and the future of financial services
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Article 1 - The Atlantic */}
+            <a
+              href="https://www.theatlantic.com/technology/archive/2022/02/future-internet-blockchain-investment-banking/621480/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="h-48 bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-500 flex items-center justify-center">
+                <Coins className="w-20 h-20 text-white/80 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Technology & Financial Services</span>
+                  <span className="text-gray-400 text-xs">The Atlantic</span>
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  The Internet Is Just Investment Banking Now
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  A thought-provoking analysis on how blockchain is reshaping the future of internet and finance.
+                </p>
+                <span className="text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read Article <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </a>
+
+            {/* Article 2 - Medium */}
+            <a
+              href="https://medium.datadriveninvestor.com/ai-blockchain-and-data-analytics-in-private-markets-a91be174dc2f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="h-48 bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-500 flex items-center justify-center">
+                <Brain className="w-20 h-20 text-white/80 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">AI, Blockchain & Data Analytics</span>
+                  <span className="text-gray-400 text-xs">Medium</span>
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  AI, Blockchain, and Data Analytics in Private Markets
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  How emerging technologies are transforming private market investments and data-driven decision making.
+                </p>
+                <span className="text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read Article <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </a>
+
+            {/* Article 3 - Chainlink */}
+            <a
+              href="https://blog.chain.link/blockchain-ai-use-cases/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="h-48 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 flex items-center justify-center">
+                <TrendingUp className="w-20 h-20 text-white/80 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-2 py-1 bg-indigo-100 text-indigo-700 rounded text-xs font-medium">AI & Blockchain</span>
+                  <span className="text-gray-400 text-xs">Chainlink</span>
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  Use Cases of AI in Blockchain
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Exploring the powerful synergies between artificial intelligence and blockchain technology.
+                </p>
+                <span className="text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read Article <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );
