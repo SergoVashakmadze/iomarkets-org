@@ -395,7 +395,7 @@ const About: React.FC = () => {
             </div>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                Beyond traditional finance, internet technologies have revolutionized the creative sector (<a href="https://iomarkets.xyz" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.xyz</a>). NFTs and digital collectibles enable verifiable ownership of unique digital works. Artists can now monetize directly to fans without gatekeepers. Music, video, and audio content flows directly from creator to consumer. Intellectual property can be registered on immutable blockchains, with smart contracts ensuring creators receive royalties automatically and in perpetuity.
+                Beyond traditional finance, internet technologies have revolutionized the creative sector <span className="text-sm">(<a href="https://iomarkets.xyz" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.xyz</a>)</span>. NFTs and digital collectibles enable verifiable ownership of unique digital works. Artists can now monetize directly to fans without gatekeepers. Music, video, and audio content flows directly from creator to consumer. Intellectual property can be registered on immutable blockchains, with smart contracts ensuring creators receive royalties automatically and in perpetuity.
               </p>
               <p>
                 This represents something profound: <strong>internet technologies have become the primary wealth creation engine globally</strong>. The largest companies by market capitalization are internet-native or internet-enabled. Digital creators, once marginalized, now build billion-dollar enterprises. The creative economy, supercharged by blockchain and AI, has become a legitimate asset class.
@@ -417,7 +417,7 @@ const About: React.FC = () => {
             </div>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                Underpinning everything is critical infrastructure (<a href="https://iomarkets.tech" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.tech</a>): APIs enabling seamless integration, compliance technology automating regulatory requirements, security solutions protecting digital assets, and cloud-native architecture providing global scale and resilience.
+                Underpinning everything is critical infrastructure <span className="text-sm">(<a href="https://iomarkets.tech" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600 hover:text-blue-800">IoMarkets.tech</a>)</span>: APIs enabling seamless integration, compliance technology automating regulatory requirements, security solutions protecting digital assets, and cloud-native architecture providing global scale and resilience.
               </p>
             </div>
           </motion.div>
