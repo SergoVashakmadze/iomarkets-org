@@ -480,6 +480,12 @@ const About: React.FC = () => {
               <p>
                 IoMarkets embraces this philosophy. The scope of our vision is intentionally audacious because the transformation underway in financial services demands nothing less. We're not building for incremental improvement - we're building for fundamental change.
               </p>
+              <p>
+                <strong>IoMarkets is seeking equally ambitious strategic partners</strong> - visionaries and organizations who share this transformative outlook and can contribute value beyond capital. We believe the most impactful partnerships are built on shared conviction, complementary expertise, and a mutual commitment to reshaping the future of financial services.
+              </p>
+              <p>
+                Whether you bring deep domain expertise, strategic networks, technological capabilities, or operational excellence - if you see the same opportunity we see and are ready to build something extraordinary together, we want to hear from you. The Internet of Markets is not a solo endeavor; it's a collaborative ecosystem where the right partners amplify what's possible.
+              </p>
             </div>
           </motion.div>
 
